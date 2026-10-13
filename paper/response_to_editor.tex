@@ -1,0 +1,248 @@
+% ============================================================
+% Response to Editor -- Forests manuscript forests-4515777
+% Prepared: 2026-10-07
+% In-place edits 2026-10-12: Figure 3 -> Appendix Figure A3 (station BJS
+%   moved to appendix); removed reference to Appendix Figure A2 (station
+%   DR figure dropped from paper).
+% In-place edits 2026-10-12 (CLCD station): Added CLCD forest cover (100m
+%   buffer, ATT=-2.41 pp, SE=2.07) to Comment 2 itemised list; updated
+%   "Both estimates" -> "All estimates"; clarified Figure A3 grid does not
+%   include CLCD panel.
+% In-place edits 2026-10-12 (title): Updated Comment 4 title item to
+%   reflect current title including coding-agents subtitle; added sentence
+%   noting the coding-agent use is part of the paper's interest.
+% In-place edits 2026-10-13 (appendix restructure): A1 buffer-robustness
+%   figure split into A1 (BJS ctrl 5km, col 2) and A2 (CS pref, col 5);
+%   old A2 DR -> A3; old A3 station BJS -> A4 (Tmax moved to upper left).
+%   Comment 1 Figure A1 description updated; Comment 2 A3 -> A4.
+% In-place edits 2026-10-13 (appendix reorder): appendix figures reordered
+%   to match Table 1 column order: A1=col2 (BJS 5km), A2=col3 (DR 20km),
+%   A3=col5 (CS pref), A4=col6 (station).  Comment 1 paragraph updated.
+% ============================================================
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{natbib}
+\bibpunct{(}{)}{;}{a}{,}{,}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\title{Response to Editor\\
+       \large Manuscript forests-4515777\\
+       \large ``The Effect of China's National Forest City Program on Urban
+       Heat Is Not Robustly Identified: A Comment on Ma, Geng, and Zhong
+       (2026)''}
+\author{Matthew Turner}
+\date{October 2026}
+
+\begin{document}
+
+\maketitle
+
+\noindent
+I thank the editor for the careful reading of the manuscript and for the
+opportunity to revise.  The editor raises five concerns.  I address each
+in turn below.  Revised passages in the manuscript are indicated by page
+and line number.
+
+% ------------------------------------------------------------------
+\section*{Editor Comment 1: Exact Replication on Ma et al.'s Sample}
+
+\noindent\textit{Editor's request:} An exact replication on the
+\citet{Ma2026} sample and outcome --- extreme heat days, 243 cities,
+2000--2023 --- using heterogeneity-robust estimators.
+
+\bigskip\noindent
+I acknowledge that an exact replication on \citeauthor{Ma2026}'s sample
+would be the most direct response to their finding.  Unfortunately, the
+data required for such a replication are not available to me through any
+accessible channel.
+
+\citet{Ma2026} draw their weather station data from the China
+Meteorological Administration (CMA), a proprietary network that requires
+Chinese institutional affiliation and fees to access.  Their city-level
+control variables come from the China City Statistical Yearbook, which is
+similarly not available for programmatic download.  I contacted the
+authors directly to request their processed city-year panel; they
+declined to share it.  As a result, obtaining the 243-city sample used
+by \citeauthor{Ma2026} is not feasible without access to the CMA network
+or the authors' data.
+
+The one step available to make the analysis more comparable to
+\citeauthor{Ma2026} is to adopt their spatial unit.  \citeauthor{Ma2026}
+aggregate outcomes at the prefecture level; the original submission used
+circular buffers of 5, 10, and 20~km radius.  I have therefore added
+prefecture-level boundary extractions to the analysis, using 2005
+prefecture boundary polygons (pf05.shp) matched to each city in our
+sample.  Of our 275 sample cities, 258 are successfully matched to a
+prefecture polygon; the remaining 17 lie in regions (mainly Xinjiang,
+Hainan, and parts of Inner Mongolia) not covered by the shapefile and
+have missing values for prefecture-level outcomes.  Prefecture-level
+results are consistent with the circular-buffer results across all
+outcomes: temperature estimates are small, positive, and statistically
+insignificant (CS ATT $= +0.055^\circ$C, $SE = 0.087$; DR ATT
+$= +0.036^\circ$C, $SE = 0.082$).
+
+The remaining gap in sample coverage --- 99 cities vs.\ \citeauthor{Ma2026}'s
+243 --- reflects the difference in station network density between
+GHCN-Daily (the publicly available source) and CMA (the proprietary
+source used by \citeauthor{Ma2026}).  This limitation is now documented
+explicitly in the revised manuscript.
+
+Appendix Figures~A1, A2, and~A3 show event studies for all four satellite
+outcomes for the three city-level specifications in columns~(2)--(5) of
+Table~1 (excluding column~(1), shown in Figure~1 of the paper).
+Figure~A1 shows BJS with controls at the 5~km buffer (column~2);
+Figure~A2 shows DR at 20~km (column~3);
+Figure~A3 shows CS at the prefecture level (column~5).
+All three figures add CLCD forest cover as a fourth panel alongside
+LST, NDVI, and tree cover.
+
+% ------------------------------------------------------------------
+\section*{Editor Comment 2: Valid Aggregate Inference for the Station
+Hot-Days Analysis}
+
+\noindent\textit{Editor's request:} A valid aggregate ATT with a
+properly documented confidence interval for the station hot-days outcome.
+The previous submission showed the event-study figure but did not report
+the aggregate ATT.
+
+\bigskip\noindent
+I have added the aggregate ATT for the station hot-days outcome to the
+Results section (Section~4, third paragraph).  Table~1, column~(6) now
+reports BJS with controls at the station level, using the same Python
+implementation as columns~(1)--(2), and Appendix Figure~A4 shows the corresponding
+event studies.  BJS with controls values:
+
+\begin{itemize}[nosep]
+  \item Hot days ($\geq 35^\circ$C): ATT $= +1.60$ days ($SE = 2.06$;
+        95\%~CI $[-2.44,\;+5.64]$).
+  \item Summer Tmax: ATT $= +0.114^\circ$C ($SE = 0.184$).
+  \item CLCD forest cover (100~m buffer): ATT $= -2.41$~pp ($SE = 2.07$).
+\end{itemize}
+
+All estimates are statistically indistinguishable from zero, consistent
+with the city-level null results and with the paper's overall conclusion
+that an NFCP temperature effect is not robustly identified.  The CLCD
+station result corroborates the city-level vegetation null.  Pre-designation
+estimates for all station outcomes are consistent with parallel trends
+under covariate adjustment.
+
+Appendix Figure~A4 shows BJS with controls event studies for four station-level
+outcomes in a $2 \times 2$ grid (LST/Tmax top left, NDVI top right, tree
+cover bottom left, hot days bottom right).  CLCD forest cover is reported
+in Table~1, column~(6) and the Results text; it is not included as a
+separate panel in Figure~A4.
+
+% ------------------------------------------------------------------
+\section*{Editor Comment 3: Treatment of Missing Meteorological
+Observations}
+
+\noindent\textit{Editor's request:} The paper does not describe how
+station-year observations with few valid daily readings are handled.
+
+\bigskip\noindent
+I have added the following to the Data and Methods section (Section~3,
+station data paragraph):
+
+\begin{quote}
+  ``We retain stations within 50~km of a city centroid with at least 30
+  valid daily maximum temperature readings per year and average outcomes
+  where multiple stations fall within this buffer.  City-years for which
+  no station meets this threshold are excluded from the estimation sample.''
+\end{quote}
+
+I have also corrected the buffer radius from 20~km to 50~km in this
+passage; the earlier text was a typographical error --- the code applies
+a 50~km radius, consistent with the station sample size of 99 cities
+reported in the same paragraph.
+
+% ------------------------------------------------------------------
+\section*{Editor Comment 4: Title and Conclusion}
+
+\noindent\textit{Editor's request:} The title and conclusion are too
+strong; ``not robustly identified'' is what the evidence supports, not
+``no effect.''
+
+\bigskip\noindent
+I agree with this characterisation and have made the following changes.
+
+\begin{enumerate}[nosep]
+
+\item \textbf{Title.} Changed from ``No Effect of China's National Forest
+City Program on Urban Heat or Forest Cover: A Comment on Ma, Geng, and
+Zhong (2026)'' to ``The Effect of China's National Forest City Program on
+Urban Heat Is Not Robustly Identified: Comment on \citet{Ma2026} and
+Demonstration of the Use of Coding Agents for Replication Studies.''
+I believe part of the interest of this project lies in its use of coding
+agents to conduct a replication exercise that would otherwise be
+impractical, and the revised title now reflects this.
+
+\item \textbf{Abstract.} Replaced ``find no statistically or economically
+significant cooling effect'' with ``find that a cooling effect of NFCP
+designation is not robustly identified.''  Replaced ``NFCP designation
+does not lead to a decrease in temperature'' with ``our evidence does not
+support a robust cooling effect of the NFCP.''
+
+\item \textbf{Discussion (Section~5).} Replaced ``NFCP designation has no
+temperature effect'' with ``The temperature effect of NFCP designation is
+not robustly identified.''  Added: ``we cannot rule out a modest cooling
+effect.''
+
+\item \textbf{Conclusion (Section~6).} Replaced ``The main result in
+\citet{Ma2026} does not survive scrutiny'' with ``The main result in
+\citet{Ma2026} is not robustly identified.''  Added: ``our evidence is
+not sufficient to rule out a modest effect of the NFCP.''
+
+\end{enumerate}
+
+% ------------------------------------------------------------------
+\section*{Editor Comment 5: Data and Code Availability; Factual
+Inaccuracies About Ma et al.}
+
+\noindent\textit{Editor's request:} Full data and code availability
+statement; correction of factual inaccuracies about \citet{Ma2026}.
+
+\bigskip\noindent
+I have made the following corrections and additions.
+
+\begin{enumerate}[nosep]
+
+\item \textbf{Data and Code Availability.}  A new section immediately
+before the bibliography lists the public sources for each data layer
+(MODIS products from NASA EOSDIS, CLCD from Zenodo, GHCN-Daily from
+NOAA, NFCP designation lists from the National Forestry and Grassland
+Administration) and states that estimation code is available from the
+author upon request.
+
+\item \textbf{Pencil-test claim.}  The previous submission stated that
+``a straight line fits within the confidence intervals of all pre- and
+post-designation coefficients'' in \citeauthor{Ma2026}'s event study.
+This is incorrect: the post-designation coefficients in their Figure~1
+reach approximately $-8$ extreme heat days by period $+15$, with
+relatively narrow confidence intervals by that point.  I have replaced
+this passage with a correct characterisation: the pre-designation
+estimates are consistent with a mild declining pre-existing trend, and if
+such a trend continued post-designation the post-period pattern would be
+observationally equivalent to a treatment effect.
+
+\item \textbf{Description of \citeauthor{Ma2026}'s estimator.}  The
+previous submission stated that \citeauthor{Ma2026} ``apply this
+estimator [BJS] for their event study but not their main results table.''
+I have corrected this to: \citeauthor{Ma2026} report TWFE estimates in
+their main results table (their Table~5) and use the BJS imputation
+estimator only for the event-study pre-trend test in their Figure~1.  The
+TWFE estimates, not the BJS estimates, are the basis of their
+quantitative conclusion of approximately three fewer extreme heat days per
+year.
+
+\end{enumerate}
+
+% ------------------------------------------------------------------
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

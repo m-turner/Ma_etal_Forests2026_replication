@@ -1,0 +1,276 @@
+city_id,city_name,city_name_nfc,city_name_zh,lat,lon,province_en,province_zh,treated,designation_year,match_status,match_dist_km,match_name_score
+1,Akesu,Aksu,阿克苏,41.1695,80.2626,Xinjiang,新疆,1,2008,confirmed,1.1,0.889
+2,Ankang,Ankang,安康,32.6912,109.0297,Shaanxi,陕西,1,2017,confirmed,1.2,1.0
+3,Anqing,Anqing,安庆,30.543,117.0533,Anhui,安徽,1,2014,confirmed,2.6,1.0
+4,Anshan,Anshan,鞍山,41.1236,122.99,Liaoning,辽宁,1,2012,confirmed,0.9,1.0
+5,Anyang,Anyang,安阳,36.1,114.39,Henan,河南,1,2019,confirmed,0.9,1.0
+6,Baoding,Baoding,保定,38.8511,115.4903,Hebei,河北,1,2019,confirmed,2.7,1.0
+7,Baoji,Baoji,宝鸡,34.3651,107.2004,Shaanxi,陕西,1,2009,confirmed,2.8,1.0
+8,Baotou,Baotou,包头,40.6522,109.8222,Inner Mongolia,内蒙古,1,2007,confirmed,2.4,1.0
+9,Bazhong,Bazhong,巴中,31.8662,106.7325,Sichuan,四川,1,2017,confirmed,3.6,1.0
+10,Benxi,Benxi,本溪,41.2886,123.765,Liaoning,辽宁,1,2010,confirmed,3.5,1.0
+11,Binzhou,Binzhou,滨州,37.3811,118.0109,Shandong,山东,1,2022,confirmed,3.6,1.0
+12,Changchun,Changchun,长春,43.8866,125.3247,Jilin,吉林,1,2016,confirmed,2.2,1.0
+13,Changde,Changde,常德,29.0464,111.6783,Hunan,湖南,1,2016,confirmed,2.1,1.0
+14,Changsha,Changsha,长沙,28.1945,112.9757,Hunan,湖南,1,2006,confirmed,6.0,1.0
+15,Changzhi,Changzhi,长治,36.1921,113.1155,Shanxi,山西,1,2013,confirmed,1.0,1.0
+16,Chengde,Chengde,承德,40.9672,117.9322,Hebei,河北,1,2017,confirmed,1.9,1.0
+17,Chengdu,Chengdu,成都,30.6667,104.0667,Sichuan,四川,1,2007,confirmed,0.5,1.0
+18,Chenzhou,Chenzhou,郴州,25.8,113.0333,Hunan,湖南,1,2014,confirmed,2.6,1.0
+19,Chifeng,Chifeng,赤峰,42.2646,118.9152,Inner Mongolia,内蒙古,1,2013,confirmed,2.9,1.0
+20,Chizhou,Chizhou,池州,30.6578,117.4831,Anhui,安徽,1,2013,confirmed,0.9,1.0
+21,Chuzhou,Chuzhou,滁州,32.2985,118.3164,Anhui,安徽,1,2022,confirmed,0.4,1.0
+22,Dalian,Dalian,大连,38.9141,121.6131,Liaoning,辽宁,1,2011,confirmed,1.9,1.0
+23,Dazhou,Dazhou,达州,31.2159,107.5009,Sichuan,四川,1,2022,confirmed,1.8,1.0
+24,Deyang,Deyang,德阳,31.1302,104.382,Sichuan,四川,1,2014,confirmed,1.6,1.0
+25,Dongguan,Dongguan,东莞,23.0436,113.7458,Guangdong,广东,1,2015,confirmed,2.7,1.0
+26,Enshi,Enshi,恩施,30.2902,109.4785,Hubei,湖北,1,2019,confirmed,1.1,1.0
+27,Fangchenggang,Fangchenggang,防城港,21.7659,108.354,Guangxi,广西,1,2019,confirmed,16.2,1.0
+28,Foshan,Foshan,佛山,23.02,113.12,Guangdong,广东,1,2017,confirmed,0.0,1.0
+29,Ganzhou,Ganzhou,赣州,25.85,114.9333,Jiangxi,江西,1,2017,confirmed,2.2,1.0
+30,Guang'an,Guang'an,广安,30.4639,106.6351,Sichuan,四川,1,2013,confirmed,0.8,1.0
+31,Guangyuan,Guangyuan,广元,32.442,105.823,Sichuan,四川,1,2013,confirmed,1.5,1.0
+32,Guigang,Guigang,贵港,23.0964,109.6092,Guangxi,广西,1,2018,confirmed,1.0,1.0
+33,Guiyang,Guiyang,贵阳,26.6489,106.6246,Guizhou,贵州,1,2004,confirmed,0.6,1.0
+34,Handan,Handan,邯郸,36.6006,114.4678,Hebei,河北,1,2022,confirmed,1.1,1.0
+35,Hangzhou,Hangzhou,杭州,30.2937,120.1614,Zhejiang,浙江,1,2009,confirmed,2.8,1.0
+36,Hanzhong,Hanzhong,汉中,33.0728,107.0303,Shaanxi,陕西,1,2019,confirmed,1.0,1.0
+37,Hebi,Hebi,鹤壁,35.747,114.2956,Henan,河南,1,2014,confirmed,0.5,1.0
+38,Hefei,Hefei,合肥,31.87,117.28,Anhui,安徽,1,2014,confirmed,2.4,1.0
+39,Hezhou,Hezhou,贺州,24.4152,111.554,Guangxi,广西,1,2013,confirmed,1.7,1.0
+40,Hohhot,Hohhot,呼和浩特,40.8106,111.6522,Inner Mongolia,内蒙古,1,2010,confirmed,1.1,1.0
+41,Huaibei,Huaibei,淮北,33.9549,116.7929,Anhui,安徽,1,2019,confirmed,1.3,1.0
+42,Huangshan,Huangshan,黄山,29.7127,118.3225,Anhui,安徽,1,2015,confirmed,2.3,1.0
+43,Huangshi,Huangshi,黄石,30.2068,115.0855,Hubei,湖北,1,2018,confirmed,3.7,1.0
+44,Huizhou,Huizhou,惠州,23.0833,114.4,Guangdong,广东,1,2014,confirmed,0.4,1.0
+45,Huludao,Huludao,葫芦岛,40.7524,120.8355,Liaoning,辽宁,1,2015,confirmed,3.8,1.0
+46,Huzhou,Huzhou,湖州,30.8703,120.0933,Zhejiang,浙江,1,2013,confirmed,0.6,1.0
+47,"Ji'an, Jiangxi",Ji'an,吉安,27.1177,114.9804,Jiangxi,江西,1,2014,distance_only,0.3,0.727
+48,"Ji'nan, Shandong",Jinan,济南,36.663,117.0264,Shandong,山东,1,2015,distance_only,4.2,0.727
+49,Jiangmen,Jiangmen,江门,22.5833,113.0833,Guangdong,广东,1,2017,confirmed,0.5,1.0
+50,Jiaozuo,Jiaozuo,焦作,35.2397,113.2331,Henan,河南,1,2016,confirmed,1.1,1.0
+51,Jincheng,Jincheng,晋城,35.4865,112.8515,Shanxi,山西,1,2013,confirmed,1.5,1.0
+52,Jingdezhen,Jingdezhen,景德镇,29.2947,117.2079,Jiangxi,江西,1,2017,confirmed,3.9,1.0
+53,Jingmen,Jingmen,荆门,31.0417,112.2003,Hubei,湖北,1,2015,confirmed,1.3,1.0
+54,Jinhua,Jinhua,金华,29.0807,119.6464,Zhejiang,浙江,1,2016,confirmed,0.4,1.0
+55,Jiujiang,Jiujiang,九江,29.7041,116.0013,Jiangxi,江西,1,2016,confirmed,2.7,1.0
+56,Kaifeng,Kaifeng,开封,34.7911,114.3483,Henan,河南,1,2022,confirmed,1.9,1.0
+57,Kunming,Kunming,昆明,24.88,102.84,Yunnan,云南,1,2013,confirmed,22.4,1.0
+58,Laibin,Laibin,来宾,23.738,109.2268,Guangxi,广西,1,2016,confirmed,1.5,1.0
+59,Laiwu,Laiwu,莱芜,36.2074,117.672,Shandong,山东,1,2017,confirmed,0.8,1.0
+60,Langfang,Langfang,廊坊,39.5097,116.6947,Hebei,河北,1,2019,confirmed,2.6,1.0
+61,Lianyungang,Lianyungang,连云港,34.5969,119.1758,Jiangsu,江苏,1,2022,confirmed,4.1,1.0
+62,Liaocheng,Liaocheng,聊城,36.4551,115.9826,Shandong,山东,1,2018,confirmed,0.6,1.0
+63,Liaoyang,Liaoyang,辽阳,41.2719,123.1731,Liaoning,辽宁,1,2022,confirmed,0.6,1.0
+64,Linhai,Linzhi,林芝,28.8529,121.1403,Tibet,西藏,1,2022,name_only,796.5,0.833
+65,"Linyi, Shandong",Linyi,临沂,35.0541,118.3334,Shandong,山东,1,2013,distance_only,2.3,0.727
+66,Liuan,Lu'an,六安,31.7543,116.4981,Anhui,安徽,1,2016,confirmed,3.4,0.889
+67,Liupanshui,Liupanshui,六盘水,26.5923,104.8377,Guizhou,贵州,1,2022,confirmed,1.1,1.0
+68,Liuzhou,Liuzhou,柳州,24.33,109.42,Guangxi,广西,1,2012,confirmed,1.1,1.0
+69,Liyang,Lincang,临沧,31.423,119.4837,Yunnan,云南,1,2017,name_only,255.2,0.769
+70,Longyan,Longyan,龙岩,25.1072,117.0225,Fujian,福建,1,2015,confirmed,3.0,1.0
+71,Luohe,Luohe,漯河,33.5731,114.0241,Henan,河南,1,2010,confirmed,0.9,1.0
+72,Luoyang,Luoyang,洛阳,34.6186,112.4562,Henan,河南,1,2011,confirmed,6.9,1.0
+73,Luzhou,Luzhou,泸州,28.8775,105.4408,Sichuan,四川,1,2011,confirmed,1.3,1.0
+74,Ma'anshan,Ma'anshan,马鞍山,31.7071,118.5038,Anhui,安徽,1,2019,confirmed,4.1,1.0
+75,Maoming,Maoming,茂名,21.6627,110.9234,Guangdong,广东,1,2022,confirmed,1.1,1.0
+76,Meishan,Meishan,眉山,30.0761,103.8456,Sichuan,四川,1,2019,confirmed,0.8,1.0
+77,Meizhou,Meizhou,梅州,24.2989,116.1214,Guangdong,广东,1,2019,confirmed,0.9,1.0
+78,Nanchang,Nanchang,南昌,28.6821,115.8772,Jiangxi,江西,1,2015,confirmed,0.4,1.0
+79,Nanping,Nanping,南平,26.6433,118.1741,Fujian,福建,1,2019,confirmed,0.9,1.0
+80,Nantong,Nantong,南通,31.9904,120.8655,Jiangsu,江苏,1,2018,confirmed,2.3,1.0
+81,Ningbo,Ningbo,宁波,29.8721,121.5499,Zhejiang,浙江,1,2010,confirmed,0.2,1.0
+82,Ningde,Ningde,宁德,26.6617,119.5228,Fujian,福建,1,2019,confirmed,1.0,1.0
+83,Panzhihua,Panzhihua,攀枝花,26.5851,101.7128,Sichuan,四川,1,2017,confirmed,0.9,1.0
+84,"Pingdingshan, Henan",Pingdingshan,平顶山,33.7417,113.304,Henan,河南,1,2013,confirmed,1.4,0.8
+85,Pingliang,Pingliang,平凉,35.5392,106.6861,Gansu,甘肃,1,2022,confirmed,1.9,1.0
+86,Putian,Putian,莆田,25.4394,119.0103,Fujian,福建,1,2018,confirmed,1.4,1.0
+87,Puyang,Puyang,濮阳,35.7705,115.0438,Henan,河南,1,2018,confirmed,6.0,1.0
+88,Qianjiang,Qiannan,黔南,30.4221,112.8925,Guizhou,贵州,1,2022,name_only,114.8,0.75
+89,Qingdao,Qingdao,青岛,36.07,120.38,Shandong,山东,1,2015,confirmed,0.0,1.0
+90,Qinhuangdao,Qinhuangdao,秦皇岛,39.9317,119.5883,Hebei,河北,1,2018,confirmed,1.0,1.0
+91,Quanzhou,Quanzhou,泉州,24.8968,118.5997,Fujian,福建,1,2017,confirmed,0.4,1.0
+92,Qujing,Qujing,曲靖,25.4894,103.7977,Yunnan,云南,1,2019,confirmed,1.2,1.0
+93,Quzhou,Quzhou,衢州,28.9594,118.8686,Zhejiang,浙江,1,2012,confirmed,1.2,1.0
+94,Rizhao,Rizhao,日照,35.4034,119.512,Shandong,山东,1,2017,confirmed,2.0,1.0
+95,Sanmenxia,Sanmenxia,三门峡,34.7715,111.2038,Henan,河南,1,2012,confirmed,0.4,1.0
+96,Sanming,Sanming,三明,26.2641,117.6191,Fujian,福建,1,2016,confirmed,3.9,1.0
+97,Shangqiu,Shangqiu,商丘,34.4244,115.6514,Henan,河南,1,2016,confirmed,2.8,1.0
+98,Shangrao,Shangrao,上饶,28.4604,117.9531,Jiangxi,江西,1,2017,confirmed,2.5,1.0
+99,Shangyu,Shangluo,商洛,30.0311,120.8722,Shaanxi,陕西,1,2019,name_only,80.4,0.8
+100,Shantou,Shantou,汕头,23.3681,116.7148,Guangdong,广东,1,2019,confirmed,4.1,1.0
+101,Shaoguan,Shaoguan,韶关,24.8,113.5833,Guangdong,广东,1,2022,confirmed,2.8,1.0
+102,Shaoxing,Shaoxing,绍兴,29.9964,120.5865,Zhejiang,浙江,1,2015,confirmed,0.7,1.0
+103,Shenyang,Shenyang,沈阳,41.7922,123.4328,Liaoning,辽宁,1,2005,confirmed,0.9,1.0
+104,Shenzhen,Shenzhen,深圳,22.5415,114.0634,Guangdong,广东,1,2018,confirmed,1.2,1.0
+105,Shijiazhuang,Shijiazhuang,石家庄,38.0426,114.5122,Hebei,河北,1,2015,confirmed,2.9,1.0
+106,Shiyan,Shiyan,十堰,32.6445,110.7836,Hubei,湖北,1,2016,confirmed,2.1,1.0
+107,Shizuishan,Shizuishan,石嘴山,39.2333,106.7694,Ningxia,宁夏,1,2013,confirmed,41.1,1.0
+108,Shuangyashan,Shuangyashan,双鸭山,46.6361,131.1539,Heilongjiang,黑龙江,1,2016,confirmed,1.6,1.0
+109,Suizhou,Suizhou,随州,31.7111,113.3631,Hubei,湖北,1,2014,confirmed,1.4,1.0
+110,"Taian, Shandong",Tai'an,泰安,36.1904,117.1191,Shandong,山东,1,2015,distance_only,1.2,0.727
+111,Tongcheng,Tongren,铜仁,31.0538,116.9556,Guizhou,贵州,1,2022,name_only,79.3,0.75
+112,Tonghua,Tonghua,通化,41.7201,125.9281,Jilin,吉林,1,2017,confirmed,0.2,1.0
+113,Tongling,Tongling,铜陵,30.9363,117.8109,Anhui,安徽,1,2017,confirmed,1.8,1.0
+114,Weifang,Weifang,潍坊,36.71,119.1019,Shandong,山东,1,2016,confirmed,6.2,1.0
+115,Weihai,Weihai,威海,37.5017,122.1136,Shandong,山东,1,2009,confirmed,1.1,1.0
+116,Wenzhou,Wenzhou,温州,27.9994,120.6668,Zhejiang,浙江,1,2014,confirmed,2.6,1.0
+117,Wuhan,Wuhan,武汉,30.5833,114.2667,Hubei,湖北,1,2010,confirmed,3.2,1.0
+118,Wuzhou,Wuzhou,梧州,23.4832,111.2741,Guangxi,广西,1,2011,confirmed,0.7,1.0
+119,Xiamen,Xiamen,厦门,24.4793,118.0899,Fujian,福建,1,2013,confirmed,1.0,1.0
+120,Xiangyang,Xiangyang,襄阳,32.0088,112.144,Hubei,湖北,1,2014,confirmed,1.8,1.0
+121,Xianning,Xianning,咸宁,29.8356,114.3303,Hubei,湖北,1,2015,confirmed,5.0,1.0
+122,Xingtai,Xingtai,邢台,37.0631,114.4942,Hebei,河北,1,2022,confirmed,0.9,1.0
+123,Xining,Xining,西宁,36.62,101.78,Qinghai,青海,1,2015,confirmed,0.9,1.0
+124,Xinxiang,Xinxiang,新乡,35.2989,113.9015,Henan,河南,1,2008,confirmed,2.6,1.0
+125,Xinyang,Xinyang,信阳,32.1289,114.0746,Henan,河南,1,2019,confirmed,2.4,1.0
+126,Xinyu,Xinyu,新余,27.8043,114.9334,Jiangxi,江西,1,2010,confirmed,2.2,1.0
+127,Xuancheng,Xuancheng,宣城,30.949,118.7524,Anhui,安徽,1,2015,confirmed,0.3,1.0
+128,Xuchang,Xuchang,许昌,34.0167,113.8167,Henan,河南,1,2007,confirmed,1.5,1.0
+129,Xuzhou,Xuzhou,徐州,34.2637,117.1866,Jiangsu,江苏,1,2012,confirmed,0.9,1.0
+130,Yan'an,Yan'an,延安,36.5967,109.4838,Shaanxi,陕西,1,2016,confirmed,0.5,1.0
+131,Yangjiang,Yangjiang,阳江,21.8614,111.9563,Guangdong,广东,1,2022,confirmed,1.9,1.0
+132,Yangzhou,Yangzhou,扬州,32.3915,119.4238,Jiangsu,江苏,1,2011,confirmed,1.1,1.0
+133,Yantai,Yantai,烟台,37.4651,121.4372,Shandong,山东,1,2016,confirmed,1.3,1.0
+134,Yibin,Yibin,宜宾,28.7667,104.6238,Sichuan,四川,1,2017,confirmed,5.3,1.0
+135,Yichang,Yichang,宜昌,30.7034,111.2965,Hubei,湖北,1,2012,confirmed,1.6,1.0
+136,Yingkou,Yingkou,营口,40.6648,122.2283,Liaoning,辽宁,1,2015,confirmed,1.7,1.0
+137,Yongzhou,Yongzhou,永州,26.4351,111.6063,Hunan,湖南,1,2015,confirmed,1.5,1.0
+138,Zaozhuang,Zaozhuang,枣庄,34.8052,117.3242,Shandong,山东,1,2014,confirmed,7.2,1.0
+139,Zhangjiakou,Zhangjiakou,张家口,40.81,114.8794,Hebei,河北,1,2014,confirmed,4.5,1.0
+140,Zhangzhou,Zhangzhou,漳州,24.5133,117.6556,Fujian,福建,1,2015,confirmed,0.9,1.0
+141,Zhaoqing,Zhaoqing,肇庆,23.0512,112.4597,Guangdong,广东,1,2016,confirmed,1.1,1.0
+142,Zhengzhou,Zhengzhou,郑州,34.7459,113.6995,Henan,河南,1,2014,confirmed,4.5,1.0
+143,Zhongshan,Zhongshan,中山,22.518,113.3839,Guangdong,广东,1,2018,confirmed,1.7,1.0
+144,Zhoushan,Zhoushan,舟山,29.9885,122.2135,Zhejiang,浙江,1,2018,confirmed,11.9,1.0
+145,Zhuhai,Zhuhai,珠海,22.2769,113.5678,Guangdong,广东,1,2016,confirmed,0.8,1.0
+146,Zhumadian,Zhumadian,驻马店,32.9794,114.0294,Henan,河南,1,2018,confirmed,4.6,1.0
+147,Zhuzhou,Zhuzhou,株洲,27.8333,113.15,Hunan,湖南,1,2014,confirmed,2.0,1.0
+148,Zibo,Zibo,淄博,36.7906,118.0633,Shandong,山东,1,2014,confirmed,1.6,1.0
+149,Zunyi,Zunyi,遵义,27.7113,106.9365,Guizhou,贵州,1,2010,confirmed,4.2,1.0
+150,Anshun,,,26.2444,105.9324,,,0,,,,
+151,Baicheng,,,45.6183,122.8418,,,0,,,,
+152,Baishan,,,41.9373,126.4229,,,0,,,,
+153,Baiyin,,,36.5487,104.1831,,,0,,,,
+154,Bayannaoer,,,40.7505,107.4052,,,0,,,,
+155,Beihai,,,21.4785,109.12,,,0,,,,
+156,Beijing,,,39.9075,116.3972,,,0,,,,
+157,Bengbu,,,32.9408,117.3608,,,0,,,,
+158,Bijie,,,27.307,105.2837,,,0,,,,
+159,Bozhou,,,33.8703,115.777,,,0,,,,
+160,Cangzhou,,,38.3167,116.8667,,,0,,,,
+161,"Changzhou, Jiangsu",,,31.7809,119.9594,,,0,,,,
+162,Chaoyang,,,41.5773,120.4511,,,0,,,,
+163,Chaozhou,,,23.6651,116.6379,,,0,,,,
+164,Chongqing,,,29.5628,106.5528,,,0,,,,
+165,Dandong,,,40.1198,124.3739,,,0,,,,
+166,Daqing,,,46.59,125.11,,,0,,,,
+167,Datong,,,40.0805,113.293,,,0,,,,
+168,Dezhou,,,37.4518,116.301,,,0,,,,
+169,Dongying,,,37.4533,118.5785,,,0,,,,
+170,Erduosi (Ordoss),,,39.5917,109.7666,,,0,,,,
+171,Ezhou,,,30.4001,114.8846,,,0,,,,
+172,"Fushun, Liaoning",,,41.8807,123.9467,,,0,,,,
+173,Fuxin,,,42.0156,121.6589,,,0,,,,
+174,Fuyang,,,32.89,115.82,,,0,,,,
+175,"Fuzhou, Fujian",,,26.08,119.3,,,0,,,,
+176,"Fuzhou, Jiangxi",,,27.964,116.3615,,,0,,,,
+177,"Guangzhou, Guangdong",,,23.1335,113.3217,,,0,,,,
+178,Guilin,,,25.2819,110.2864,,,0,,,,
+179,Haerbin,,,45.7552,126.6375,,,0,,,,
+180,Haikou,,,20.0274,110.3301,,,0,,,,
+181,Hami,,,42.8259,93.5169,,,0,,,,
+182,Hechi,,,24.6977,108.0808,,,0,,,,
+183,Hegang,,,47.3443,130.2937,,,0,,,,
+184,Hengshui,,,37.7411,115.6781,,,0,,,,
+185,Hengyang,,,26.8841,112.6251,,,0,,,,
+186,Heyuan,,,23.7509,114.6992,,,0,,,,
+187,Heze,,,35.2451,115.4598,,,0,,,,
+188,Huai'an,,,33.607,119.0148,,,0,,,,
+189,Huaihua,,,27.5494,109.9592,,,0,,,,
+190,Huainan,,,32.6264,116.9969,,,0,,,,
+191,Jiamusi,,,46.7979,130.3302,,,0,,,,
+192,Jiaxing,,,30.7665,120.7482,,,0,,,,
+193,Jiayuguan,,,39.808,98.2761,,,0,,,,
+194,Jieyang,,,23.5526,116.3721,,,0,,,,
+195,Jilin,,,43.8508,126.5603,,,0,,,,
+196,"Jingzhou, Hubei",,,30.3276,112.2484,,,0,,,,
+197,"Jining, Shandong",,,35.4146,116.5847,,,0,,,,
+198,Jinzhong,,,37.6882,112.7349,,,0,,,,
+199,Jinzhou,,,41.1078,121.1417,,,0,,,,
+200,Jiuquan,,,39.738,98.5042,,,0,,,,
+201,"Jixi, Heilongjiang",,,45.29,130.97,,,0,,,,
+202,Kelamayi,,,45.5941,84.8729,,,0,,,,
+203,Lanzhou,,,36.0589,103.8261,,,0,,,,
+204,Leshan,,,29.5762,103.759,,,0,,,,
+205,Liaoyuan,,,42.9036,125.1358,,,0,,,,
+206,Linfen,,,36.0889,111.5189,,,0,,,,
+207,"Lishui, Zhejiang",,,28.457,119.9192,,,0,,,,
+208,Loudi,,,27.7344,111.9944,,,0,,,,
+209,Lvliang,,,37.5195,111.1318,,,0,,,,
+210,"Mianyang, Sichuan",,,31.46,104.68,,,0,,,,
+211,Mudanjiang,,,44.55,129.63,,,0,,,,
+212,Nanchong,,,30.84,106.11,,,0,,,,
+213,"Nanjing, Jiangsu",,,32.0482,118.7898,,,0,,,,
+214,"Nanyang, Henan",,,32.9999,112.5259,,,0,,,,
+215,Neijiang,,,29.5835,105.0622,,,0,,,,
+216,Panjin,,,41.1219,122.0701,,,0,,,,
+217,"Pingxiang, Jiangxi",,,27.6348,113.8477,,,0,,,,
+218,Qingyuan,,,23.7146,113.0297,,,0,,,,
+219,Qinzhou,,,21.9681,108.6214,,,0,,,,
+220,Qiqihaer,,,47.3408,123.9672,,,0,,,,
+221,Qitaihe,,,45.7671,130.975,,,0,,,,
+222,Sanya,,,18.2676,109.5034,,,0,,,,
+223,Shanghai,,,31.2222,121.4581,,,0,,,,
+224,Shanwei,,,22.7787,115.3568,,,0,,,,
+225,Shaoyang,,,27.2403,111.4709,,,0,,,,
+226,Shihezi,,,44.3075,86.032,,,0,,,,
+227,Shuozhou,,,39.3158,112.4225,,,0,,,,
+228,Siping,,,43.1633,124.3686,,,0,,,,
+229,Songyuan,,,27.6217,119.0592,,,0,,,,
+230,Suihua,,,46.6366,126.983,,,0,,,,
+231,"Suining, Sichuan",,,30.5236,105.5639,,,0,,,,
+232,Suqian,,,33.9681,118.2924,,,0,,,,
+233,"Suzhou, Anhui",,,33.6359,116.9747,,,0,,,,
+234,"Suzhou, Jiangsu",,,31.3021,120.5853,,,0,,,,
+235,"Taiyuan, Shanxi",,,37.8619,112.5516,,,0,,,,
+236,"Taizhou, Jiangsu",,,32.4945,119.9029,,,0,,,,
+237,"Taizhou, Zhejiang",,,28.6372,121.4185,,,0,,,,
+238,"Tangshan, Hebei",,,39.6285,118.1799,,,0,,,,
+239,Tianjin,,,39.1088,117.1886,,,0,,,,
+240,Tianshui,,,34.5809,105.7237,,,0,,,,
+241,Tieling,,,42.2931,123.8414,,,0,,,,
+242,Tongchuan,,,34.8988,108.9506,,,0,,,,
+243,Tongliao,,,43.6125,122.2653,,,0,,,,
+244,Weinan,,,34.5036,109.5089,,,0,,,,
+245,Wuhai,,,39.6647,106.8122,,,0,,,,
+246,"Wuhu, Anhui",,,31.3336,118.3812,,,0,,,,
+247,Wuwei,,,37.9251,102.6337,,,0,,,,
+248,"Wuxi, Jiangsu",,,31.5756,120.3014,,,0,,,,
+249,"Xi'an, Shaanxi",,,34.2894,108.9402,,,0,,,,
+250,"Xiangtan, Hunan",,,27.8283,112.927,,,0,,,,
+251,"Xianyang, Shaanxi",,,34.3386,108.7015,,,0,,,,
+252,Xiaogan,,,30.9256,113.9175,,,0,,,,
+253,Xinzhou,,,38.4173,112.7331,,,0,,,,
+254,Xiongan,,,38.9796,116.079,,,0,,,,
+255,Yaan,,,29.9874,102.9945,,,0,,,,
+256,"Yancheng, Jiangsu",,,33.3569,120.1551,,,0,,,,
+257,Yangquan,,,37.8558,113.5826,,,0,,,,
+258,"Yichun, Heilongjiang",,,47.7245,128.8337,,,0,,,,
+259,"Yichun, Jiangxi",,,27.8062,114.3892,,,0,,,,
+260,Yinchuan,,,38.4817,106.2299,,,0,,,,
+261,"Yiyang, Hunan",,,28.5666,112.3487,,,0,,,,
+262,Yueyang,,,29.3722,113.1153,,,0,,,,
+263,"Yulin, Guangxi",,,22.6339,110.1533,,,0,,,,
+264,"Yulin, Shaanxi",,,38.2838,109.7315,,,0,,,,
+265,Yuncheng,,,35.0231,110.9928,,,0,,,,
+266,Yunfu,,,22.9306,112.0373,,,0,,,,
+267,Yuxi,,,24.3567,102.5395,,,0,,,,
+268,Zhangye,,,38.9342,100.4517,,,0,,,,
+269,Zhanjiang,,,21.27,110.36,,,0,,,,
+270,Zhaotong,,,27.3363,103.7189,,,0,,,,
+271,"Zhenjiang, Jiangsu",,,32.2027,119.4489,,,0,,,,
+272,Zhoukou,,,33.6174,114.6461,,,0,,,,
+273,Zigong,,,29.3416,104.7769,,,0,,,,
+274,Ziyang,,,30.1256,104.6305,,,0,,,,
+275,Ürümqi (Wulumqi),,,43.8253,87.6038,,,0,,,,

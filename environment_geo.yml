@@ -1,0 +1,36 @@
+name: environment_geo
+channels:
+  - conda-forge
+dependencies:
+  # Core Python
+  - python=3.11
+
+  # Geospatial stack - let mamba resolve compatible versions
+  # Updated 2026-06-23: Minimal constraints, let mamba find compatible versions
+  # Updated 2026-06-23: Removed rasterio (moved to environment_raster)
+  - gdal
+  - geopandas
+  - fiona
+  - rasterstats
+  - shapely
+  - affine
+  # 2026-06-25: rasterio is a hard dependency of rasterstats and is imported
+  # directly by code/utils/process_lst.py, process_modis_ndvi.py, and the new
+  # build_clcd_panel_v1.py - restoring it here since the env still runs those
+  # scripts despite the 2026-06-23 comment above about moving it out.
+  - rasterio
+
+  # Data processing
+  - pandas
+  - numpy
+  - xarray
+
+  # Satellite data access
+  - earthaccess
+  - requests  # 2026-06-25: used by download_clcd_v1.py to fetch from Zenodo
+
+  # Utilities
+  - tqdm
+  - matplotlib
+  - openpyxl  # 2026-06-25: reads .xlsx files (UN WUP newer revisions)
+  - xlrd      # 2026-06-26: reads legacy .xls files (UN WUP 2018 revision)

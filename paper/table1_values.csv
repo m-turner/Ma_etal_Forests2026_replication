@@ -1,0 +1,21 @@
+outcome,outcome_label,estimator,att,se,note
+lst_summer_mean,LST mean ($^\circ$C),BJS-ctrl 20km,0.03220,0.10630,Python bjs_dr 2026-07-29 run
+lst_summer_mean,LST mean ($^\circ$C),BJS-ctrl 5km,0.01575,0.12124,Python bjs_dr 2026-07-29 run
+lst_summer_mean,LST mean ($^\circ$C),BJS 20km,0.25386,0.03106,Stata bjs 2026-07-29 run; p<0.01
+lst_summer_mean,LST mean ($^\circ$C),DR 20km,0.01587,0.09684,Stata cs_dr 2026-07-29 run
+lst_summer_mean,LST mean ($^\circ$C),CS 20km,0.06656,0.09535,Stata cs 2026-07-29 run
+ndvi_mean,NDVI (index),BJS-ctrl 20km,0.00175,0.00217,Python bjs_dr 2026-07-29 run
+ndvi_mean,NDVI (index),BJS-ctrl 5km,-0.00061,0.00310,Python bjs_dr 2026-07-29 run
+ndvi_mean,NDVI (index),BJS 20km,0.00178,0.00064,Stata bjs 2026-07-29 run; p<0.01
+ndvi_mean,NDVI (index),DR 20km,-0.00024,0.00199,Stata cs_dr 2026-07-29 run
+ndvi_mean,NDVI (index),CS 20km,0.00028,0.00186,Stata cs 2026-07-29 run
+tree_cover_mean,Tree cover (\%),BJS-ctrl 20km,0.09523,0.28711,Python bjs_dr 2026-07-29 run
+tree_cover_mean,Tree cover (\%),BJS-ctrl 5km,0.04711,0.38033,Python bjs_dr 2026-07-29 run
+tree_cover_mean,Tree cover (\%),BJS 20km,0.05720,0.08109,Stata bjs 2026-07-29 run; null
+tree_cover_mean,Tree cover (\%),DR 20km,-0.10307,0.25616,Stata cs_dr 2026-07-29 run
+tree_cover_mean,Tree cover (\%),CS 20km,-0.16499,0.26265,Stata cs 2026-07-29 run
+clcd_forest_pct,CLCD forest (\%),BJS-ctrl 20km,-0.19372,0.30052,Python bjs_dr 2026-07-29 run
+clcd_forest_pct,CLCD forest (\%),BJS-ctrl 5km,-0.58503,0.31905,Python bjs_dr 2026-07-29 run; p<0.10
+clcd_forest_pct,CLCD forest (\%),BJS 20km,-0.37057,0.08269,Stata bjs 2026-07-29 run; p<0.01
+clcd_forest_pct,CLCD forest (\%),DR 20km,-0.08878,0.21948,Stata cs_dr 2026-07-29 run
+clcd_forest_pct,CLCD forest (\%),CS 20km,-0.29052,0.21170,Stata cs 2026-07-29 run

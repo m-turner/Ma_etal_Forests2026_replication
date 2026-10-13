@@ -1,0 +1,31 @@
+name: environment_stats
+channels:
+  - conda-forge
+dependencies:
+  # Core Python
+  - python=3.11
+
+  # Data processing
+  - pandas>=2.0
+  - numpy>=1.24  # No upper limit - allows NumPy 2.0+
+  - pyarrow>=10.0  # For parquet files
+
+  # Statistics and econometrics
+  - statsmodels>=0.14
+  - scipy>=1.10
+  - linearmodels>=0.59  # 2026-07-24: panel TWFE via entity-effects demeaning (Stage-1 of BJS)
+
+  # Visualization
+  - matplotlib>=3.7
+  - seaborn>=0.12
+
+  # Development and utilities
+  - jupyter>=1.0
+  - pytest>=7.4
+  - tqdm>=4.65
+
+  # Staggered DiD estimators (pip-only; not on conda-forge)
+  - pip
+  - pip:
+    - diff-diff       # BJS imputation + CS DR, validated against R didimputation/did packages
+    - csdid           # Python port of Callaway-Sant'Anna R did package (aggte, bootstrap SEs)

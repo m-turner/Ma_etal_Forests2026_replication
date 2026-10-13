@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Stata temp files and intermediate outputs
+stata_input.csv
+*.ster
+*.gph
+*.smcl
+code/run_analysis_stata/temp/
+code/run_station_analysis_stata/temp/
+code/run_analysis/temp/
+code/run_station_analysis/temp/
+
+# Run logs (generated on each run)
+last_run*.log
+*.log
+
+# LaTeX auxiliary files
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/*.toc
+paper/*.synctex
+paper/*.synctex.gz
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Conda/pip env directories if someone installs locally
+venv_geo/
+venv_stats/
+environment_stats/
+environment_geo/
+.env
