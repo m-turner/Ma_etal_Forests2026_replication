@@ -5,12 +5,18 @@
 *   inside a foreach loop and written directly with file write.
 *   BJS aggregate ATT computed with cond() instead of nested if.
 * Previous (Mata-based) version saved in _old/run_one_spec_station_mata.do
+* 2026-10-15: reverted from failed cond/string/tempname refactor (it hung in foreach ;
+*   loops -- stata_output_cs_raw.csv stayed 0 bytes). Python-side fix is sufficient: ;
+*   na_values=['.'] + pd.to_numeric in run_station_analysis_stata_v1.py handles ;
+*   %18.10f leading spaces and Stata missing-value dots without any Stata change. ;
+*   dropmissing on estat simple/event (added 2026-10-14) is retained below. ;
 * =============================================================================
 * Stata worker for the station-level Python/Stata parallel analysis pipeline.
 *
 * Differences from city version (run_one_spec.do):
 *   1. CS DR uses notyet (not-yet-treated controls) -- never-treated pool too small.
 *   2. BJS does NOT use autosample -- stage-1 is never-treated only.
+*   3. estat simple and estat event use dropmissing option (2026-10-14).
 *
 * Fixed paths (defined as local macros below):
 *   input_csv   = code/run_station_analysis_stata/temp/stata_input.csv
@@ -61,12 +67,15 @@ display "--- CS (no controls, never-treated) ---" ;
 
 csdid y, ivar(unit_id) time(year) gvar(gvar) method(reg) ;
 
-estat simple ;
+* 2026-10-14: dropmissing added -- newer csdid fails estat simple when some ATT(g,t)
+*   cells are missing (small station sample produces many missing cells). dropmissing
+*   aggregates over the estimated cells only. ;
+estat simple, dropmissing ;
 local cs_att = r(table)[1,1] ;
 local cs_se  = r(table)[2,1] ;
 display "  ATT = " %10.6f (`cs_att') "   SE = " %10.6f (`cs_se') ;
 
-estat event ;
+estat event, dropmissing ;
 local cs_cols : colnames r(table) ;
 
 file open outfile using "`tables_stem'_cs_raw.csv", write replace ;
@@ -90,12 +99,12 @@ display "--- CS DR (dripw, controls, not-yet-treated) ---" ;
 csdid y lat lon log_pop_pretx,
     ivar(unit_id) time(year) gvar(gvar) method(dripw) notyet ;
 
-estat simple ;
+estat simple, dropmissing ;
 local csdr_att = r(table)[1,1] ;
 local csdr_se  = r(table)[2,1] ;
 display "  ATT = " %10.6f (`csdr_att') "   SE = " %10.6f (`csdr_se') ;
 
-estat event ;
+estat event, dropmissing ;
 local csdr_cols : colnames r(table) ;
 
 file open outfile using "`tables_stem'_cs_dr_raw.csv", write replace ;

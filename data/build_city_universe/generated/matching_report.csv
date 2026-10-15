@@ -1,0 +1,175 @@
+status,agreed,recommended_wup,nfc_name_en,nfc_name_zh,province_en,province_zh,nfc_lat,nfc_lon,designation_year,name_wup,name_score,dist_wup,dist_km
+conflict,no,,Tangshan,唐山,Hebei,河北,39.63,118.18,2019,Anshan,0.857,"Tangshan, Hebei",0.2
+conflict,no,,Wuhu,芜湖,Anhui,安徽,31.33,118.38,2018,Wuzhou,0.8,"Wuhu, Anhui",0.4
+conflict,no,,Nanyang,南阳,Henan,河南,33.0,112.53,2018,Anyang,0.923,"Nanyang, Henan",0.4
+conflict,no,,Xiangtan,湘潭,Hunan,湖南,27.83,112.93,2018,Xiangyang,0.824,"Xiangtan, Hunan",0.4
+conflict,no,,Wuxi,无锡,Jiangsu,江苏,31.57,120.3,2009,Yuxi,0.75,"Wuxi, Jiangsu",0.6
+conflict,no,,Lishui,丽水,Zhejiang,浙江,28.45,119.92,2012,Liupanshui,0.75,"Lishui, Zhejiang",0.8
+conflict,no,,Yancheng,盐城,Jiangsu,江苏,33.35,120.15,2019,Yuncheng,0.875,"Yancheng, Jiangsu",0.9
+conflict,no,,Changzhou,常州,Jiangsu,江苏,31.78,119.97,2016,Cangzhou,0.941,"Changzhou, Jiangsu",1.0
+conflict,no,,Fuzhou,福州,Fujian,福建,26.07,119.3,2017,Huzhou,0.833,"Fuzhou, Fujian",1.1
+conflict,no,,Taizhou,台州,Zhejiang,浙江,28.65,121.42,2016,Dazhou,0.769,"Taizhou, Zhejiang",1.4
+conflict,no,,Suzhou,宿州,Anhui,安徽,33.65,116.97,2019,Suizhou,0.923,"Suzhou, Anhui",1.6
+conflict,no,,Pingxiang,萍乡,Jiangxi,江西,27.62,113.85,2018,Pingliang,0.889,"Pingxiang, Jiangxi",1.7
+conflict,no,,Jining,济宁,Shandong,山东,35.4,116.58,2018,Xining,0.833,"Jining, Shandong",1.7
+conflict,no,,Yichun,宜春,Jiangxi,江西,27.82,114.4,2015,Yinchuan,0.857,"Yichun, Jiangxi",1.9
+conflict,no,,Xianyang,咸阳,Shaanxi,陕西,34.33,108.72,2022,Xiangyang,0.941,"Xianyang, Shaanxi",1.9
+conflict,no,,Zhenjiang,镇江,Jiangsu,江苏,32.21,119.43,2014,Zhanjiang,0.889,"Zhenjiang, Jiangsu",2.0
+conflict,no,,Fuzhou,抚州,Jiangxi,江西,27.98,116.35,2014,Huzhou,0.833,"Fuzhou, Jiangxi",2.1
+conflict,no,,Nanjing,南京,Jiangsu,江苏,32.06,118.77,2013,Nanping,0.857,"Nanjing, Jiangsu",2.3
+conflict,no,,Xi'an,西安,Shaanxi,陕西,34.27,108.93,2016,Xiamen,0.8,"Xi'an, Shaanxi",2.4
+conflict,no,,Jingzhou,荆州,Hubei,湖北,30.35,112.22,2019,Jinzhou,0.933,"Jingzhou, Hubei",3.7
+conflict,no,,Yiyang,益阳,Hunan,湖南,28.6,112.32,2012,Liyang,0.833,"Yiyang, Hunan",4.7
+conflict,no,,Mianyang,绵阳,Sichuan,四川,31.47,104.73,2016,Anyang,0.857,"Mianyang, Sichuan",4.9
+conflict,no,,Guangzhou,广州,Guangdong,广东,23.13,113.27,2008,Ganzhou,0.875,"Guangzhou, Guangdong",5.3
+name_only,,Pingliang,Pingtan,平潭,Fujian,福建,25.52,119.78,2019,Pingliang,0.75,Putian,77.8
+name_only,,Tongcheng,Tongren,铜仁,Guizhou,贵州,27.73,109.18,2022,Tongcheng,0.75,Huaihua,79.3
+name_only,,Shangyu,Shangluo,商洛,Shaanxi,陕西,33.87,109.93,2019,Shangyu,0.8,Weinan,80.4
+name_only,,Nanping,Nanning,南宁,Guangxi,广西,22.82,108.37,2011,Nanping,0.857,Qinzhou,98.2
+name_only,,Qianjiang,Qiannan,黔南,Guizhou,贵州,26.0,107.52,2022,Qianjiang,0.75,Guiyang,114.8
+name_only,,Liyang,Lincang,临沧,Yunnan,云南,23.88,100.08,2017,Liyang,0.769,Yuxi,255.2
+name_only,,Linhai,Linzhi,林芝,Tibet,西藏,29.65,94.37,2022,Linhai,0.833,Panzhihua,796.5
+distance_only,,"Ji'an, Jiangxi",Ji'an,吉安,Jiangxi,江西,27.12,114.98,2014,Jiaxing,0.727,"Ji'an, Jiangxi",0.3
+distance_only,,"Taian, Shandong",Tai'an,泰安,Shandong,山东,36.18,117.12,2015,Dalian,0.727,"Taian, Shandong",1.2
+distance_only,,"Linyi, Shandong",Linyi,临沂,Shandong,山东,35.07,118.35,2013,Linhai,0.727,"Linyi, Shandong",2.3
+distance_only,,"Ji'nan, Shandong",Jinan,济南,Shandong,山东,36.67,116.98,2015,Jinhua,0.727,"Ji'nan, Shandong",4.2
+confirmed,yes,Qingdao,Qingdao,青岛,Shandong,山东,36.07,120.38,2015,Qingdao,1.0,Qingdao,0.0
+confirmed,yes,Foshan,Foshan,佛山,Guangdong,广东,23.02,113.12,2017,Foshan,1.0,Foshan,0.0
+confirmed,yes,Ningbo,Ningbo,宁波,Zhejiang,浙江,29.87,121.55,2010,Ningbo,1.0,Ningbo,0.2
+confirmed,yes,Tonghua,Tonghua,通化,Jilin,吉林,41.72,125.93,2017,Tonghua,1.0,Tonghua,0.2
+confirmed,yes,Xuancheng,Xuancheng,宣城,Anhui,安徽,30.95,118.75,2015,Xuancheng,1.0,Xuancheng,0.3
+confirmed,yes,Sanmenxia,Sanmenxia,三门峡,Henan,河南,34.77,111.2,2012,Sanmenxia,1.0,Sanmenxia,0.4
+confirmed,yes,Huizhou,Huizhou,惠州,Guangdong,广东,23.08,114.4,2014,Huizhou,1.0,Huizhou,0.4
+confirmed,yes,Nanchang,Nanchang,南昌,Jiangxi,江西,28.68,115.88,2015,Nanchang,1.0,Nanchang,0.4
+confirmed,yes,Jinhua,Jinhua,金华,Zhejiang,浙江,29.08,119.65,2016,Jinhua,1.0,Jinhua,0.4
+confirmed,yes,Quanzhou,Quanzhou,泉州,Fujian,福建,24.9,118.6,2017,Quanzhou,1.0,Quanzhou,0.4
+confirmed,yes,Chuzhou,Chuzhou,滁州,Anhui,安徽,32.3,118.32,2022,Chuzhou,1.0,Chuzhou,0.4
+confirmed,yes,Chengdu,Chengdu,成都,Sichuan,四川,30.67,104.07,2007,Chengdu,1.0,Chengdu,0.5
+confirmed,yes,Hebi,Hebi,鹤壁,Henan,河南,35.75,114.3,2014,Hebi,1.0,Hebi,0.5
+confirmed,yes,Yan'an,Yan'an,延安,Shaanxi,陕西,36.6,109.48,2016,Yan'an,1.0,Yan'an,0.5
+confirmed,yes,Jiangmen,Jiangmen,江门,Guangdong,广东,22.58,113.08,2017,Jiangmen,1.0,Jiangmen,0.5
+confirmed,yes,Guiyang,Guiyang,贵阳,Guizhou,贵州,26.65,106.63,2004,Guiyang,1.0,Guiyang,0.6
+confirmed,yes,Huzhou,Huzhou,湖州,Zhejiang,浙江,30.87,120.1,2013,Huzhou,1.0,Huzhou,0.6
+confirmed,yes,Liaocheng,Liaocheng,聊城,Shandong,山东,36.45,115.98,2018,Liaocheng,1.0,Liaocheng,0.6
+confirmed,yes,Liaoyang,Liaoyang,辽阳,Liaoning,辽宁,41.27,123.18,2022,Liaoyang,1.0,Liaoyang,0.6
+confirmed,yes,Wuzhou,Wuzhou,梧州,Guangxi,广西,23.48,111.28,2011,Wuzhou,1.0,Wuzhou,0.7
+confirmed,yes,Shaoxing,Shaoxing,绍兴,Zhejiang,浙江,30.0,120.58,2015,Shaoxing,1.0,Shaoxing,0.7
+confirmed,yes,Guang'an,Guang'an,广安,Sichuan,四川,30.47,106.63,2013,Guang'an,1.0,Guang'an,0.8
+confirmed,yes,Zhuhai,Zhuhai,珠海,Guangdong,广东,22.27,113.57,2016,Zhuhai,1.0,Zhuhai,0.8
+confirmed,yes,Laiwu,Laiwu,莱芜,Shandong,山东,36.21,117.68,2017,Laiwu,1.0,Laiwu,0.8
+confirmed,yes,Meishan,Meishan,眉山,Sichuan,四川,30.07,103.85,2019,Meishan,1.0,Meishan,0.8
+confirmed,yes,Shenyang,Shenyang,沈阳,Liaoning,辽宁,41.8,123.43,2005,Shenyang,1.0,Shenyang,0.9
+confirmed,yes,Luohe,Luohe,漯河,Henan,河南,33.58,114.02,2010,Luohe,1.0,Luohe,0.9
+confirmed,yes,Anshan,Anshan,鞍山,Liaoning,辽宁,41.12,122.98,2012,Anshan,1.0,Anshan,0.9
+confirmed,yes,Xuzhou,Xuzhou,徐州,Jiangsu,江苏,34.27,117.18,2012,Xuzhou,1.0,Xuzhou,0.9
+confirmed,yes,Chizhou,Chizhou,池州,Anhui,安徽,30.65,117.48,2013,Chizhou,1.0,Chizhou,0.9
+confirmed,yes,Zhangzhou,Zhangzhou,漳州,Fujian,福建,24.52,117.65,2015,Zhangzhou,1.0,Zhangzhou,0.9
+confirmed,yes,Xining,Xining,西宁,Qinghai,青海,36.62,101.77,2015,Xining,1.0,Xining,0.9
+confirmed,yes,Panzhihua,Panzhihua,攀枝花,Sichuan,四川,26.58,101.72,2017,Panzhihua,1.0,Panzhihua,0.9
+confirmed,yes,Nanping,Nanping,南平,Fujian,福建,26.65,118.18,2019,Nanping,1.0,Nanping,0.9
+confirmed,yes,Anyang,Anyang,安阳,Henan,河南,36.1,114.38,2019,Anyang,1.0,Anyang,0.9
+confirmed,yes,Meizhou,Meizhou,梅州,Guangdong,广东,24.3,116.13,2019,Meizhou,1.0,Meizhou,0.9
+confirmed,yes,Xingtai,Xingtai,邢台,Hebei,河北,37.07,114.5,2022,Xingtai,1.0,Xingtai,0.9
+confirmed,yes,Changzhi,Changzhi,长治,Shanxi,山西,36.2,113.12,2013,Changzhi,1.0,Changzhi,1.0
+confirmed,yes,Xiamen,Xiamen,厦门,Fujian,福建,24.48,118.08,2013,Xiamen,1.0,Xiamen,1.0
+confirmed,yes,Qinhuangdao,Qinhuangdao,秦皇岛,Hebei,河北,39.93,119.6,2018,Qinhuangdao,1.0,Qinhuangdao,1.0
+confirmed,yes,Guigang,Guigang,贵港,Guangxi,广西,23.1,109.6,2018,Guigang,1.0,Guigang,1.0
+confirmed,yes,Ningde,Ningde,宁德,Fujian,福建,26.67,119.52,2019,Ningde,1.0,Ningde,1.0
+confirmed,yes,Hanzhong,Hanzhong,汉中,Shaanxi,陕西,33.07,107.02,2019,Hanzhong,1.0,Hanzhong,1.0
+confirmed,yes,Akesu,Aksu,阿克苏,Xinjiang,新疆,41.17,80.25,2008,Akesu,0.889,Akesu,1.1
+confirmed,yes,Weihai,Weihai,威海,Shandong,山东,37.51,122.12,2009,Weihai,1.0,Weihai,1.1
+confirmed,yes,Hohhot,Hohhot,呼和浩特,Inner Mongolia,内蒙古,40.82,111.65,2010,Hohhot,1.0,Hohhot,1.1
+confirmed,yes,Yangzhou,Yangzhou,扬州,Jiangsu,江苏,32.4,119.43,2011,Yangzhou,1.0,Yangzhou,1.1
+confirmed,yes,Liuzhou,Liuzhou,柳州,Guangxi,广西,24.32,109.42,2012,Liuzhou,1.0,Liuzhou,1.1
+confirmed,yes,Jiaozuo,Jiaozuo,焦作,Henan,河南,35.23,113.23,2016,Jiaozuo,1.0,Jiaozuo,1.1
+confirmed,yes,Zhaoqing,Zhaoqing,肇庆,Guangdong,广东,23.05,112.47,2016,Zhaoqing,1.0,Zhaoqing,1.1
+confirmed,yes,Enshi,Enshi,恩施,Hubei,湖北,30.3,109.48,2019,Enshi,1.0,Enshi,1.1
+confirmed,yes,Handan,Handan,邯郸,Hebei,河北,36.6,114.48,2022,Handan,1.0,Handan,1.1
+confirmed,yes,Maoming,Maoming,茂名,Guangdong,广东,21.67,110.93,2022,Maoming,1.0,Maoming,1.1
+confirmed,yes,Liupanshui,Liupanshui,六盘水,Guizhou,贵州,26.6,104.83,2022,Liupanshui,1.0,Liupanshui,1.1
+confirmed,yes,Quzhou,Quzhou,衢州,Zhejiang,浙江,28.97,118.87,2012,Quzhou,1.0,Quzhou,1.2
+confirmed,yes,Ankang,Ankang,安康,Shaanxi,陕西,32.68,109.03,2017,Ankang,1.0,Ankang,1.2
+confirmed,yes,Shenzhen,Shenzhen,深圳,Guangdong,广东,22.55,114.07,2018,Shenzhen,1.0,Shenzhen,1.2
+confirmed,yes,Qujing,Qujing,曲靖,Yunnan,云南,25.5,103.8,2019,Qujing,1.0,Qujing,1.2
+confirmed,yes,Luzhou,Luzhou,泸州,Sichuan,四川,28.87,105.43,2011,Luzhou,1.0,Luzhou,1.3
+confirmed,yes,Jingmen,Jingmen,荆门,Hubei,湖北,31.03,112.2,2015,Jingmen,1.0,Jingmen,1.3
+confirmed,yes,Yantai,Yantai,烟台,Shandong,山东,37.47,121.45,2016,Yantai,1.0,Yantai,1.3
+confirmed,yes,Huaibei,Huaibei,淮北,Anhui,安徽,33.95,116.78,2019,Huaibei,1.0,Huaibei,1.3
+confirmed,yes,"Pingdingshan, Henan",Pingdingshan,平顶山,Henan,河南,33.73,113.3,2013,"Pingdingshan, Henan",0.8,"Pingdingshan, Henan",1.4
+confirmed,yes,Suizhou,Suizhou,随州,Hubei,湖北,31.7,113.37,2014,Suizhou,1.0,Suizhou,1.4
+confirmed,yes,Putian,Putian,莆田,Fujian,福建,25.43,119.02,2018,Putian,1.0,Putian,1.4
+confirmed,yes,Xuchang,Xuchang,许昌,Henan,河南,34.03,113.82,2007,Xuchang,1.0,Xuchang,1.5
+confirmed,yes,Jincheng,Jincheng,晋城,Shanxi,山西,35.5,112.85,2013,Jincheng,1.0,Jincheng,1.5
+confirmed,yes,Guangyuan,Guangyuan,广元,Sichuan,四川,32.43,105.83,2013,Guangyuan,1.0,Guangyuan,1.5
+confirmed,yes,Yongzhou,Yongzhou,永州,Hunan,湖南,26.43,111.62,2015,Yongzhou,1.0,Yongzhou,1.5
+confirmed,yes,Laibin,Laibin,来宾,Guangxi,广西,23.75,109.22,2016,Laibin,1.0,Laibin,1.5
+confirmed,yes,Yichang,Yichang,宜昌,Hubei,湖北,30.7,111.28,2012,Yichang,1.0,Yichang,1.6
+confirmed,yes,Zibo,Zibo,淄博,Shandong,山东,36.8,118.05,2014,Zibo,1.0,Zibo,1.6
+confirmed,yes,Deyang,Deyang,德阳,Sichuan,四川,31.12,104.37,2014,Deyang,1.0,Deyang,1.6
+confirmed,yes,Shuangyashan,Shuangyashan,双鸭山,Heilongjiang,黑龙江,46.65,131.15,2016,Shuangyashan,1.0,Shuangyashan,1.6
+confirmed,yes,Hezhou,Hezhou,贺州,Guangxi,广西,24.42,111.57,2013,Hezhou,1.0,Hezhou,1.7
+confirmed,yes,Yingkou,Yingkou,营口,Liaoning,辽宁,40.65,122.23,2015,Yingkou,1.0,Yingkou,1.7
+confirmed,yes,Zhongshan,Zhongshan,中山,Guangdong,广东,22.52,113.4,2018,Zhongshan,1.0,Zhongshan,1.7
+confirmed,yes,Xiangyang,Xiangyang,襄阳,Hubei,湖北,32.02,112.13,2014,Xiangyang,1.0,Xiangyang,1.8
+confirmed,yes,Tongling,Tongling,铜陵,Anhui,安徽,30.95,117.82,2017,Tongling,1.0,Tongling,1.8
+confirmed,yes,Dazhou,Dazhou,达州,Sichuan,四川,31.2,107.5,2022,Dazhou,1.0,Dazhou,1.8
+confirmed,yes,Dalian,Dalian,大连,Liaoning,辽宁,38.9,121.6,2011,Dalian,1.0,Dalian,1.9
+confirmed,yes,Chengde,Chengde,承德,Hebei,河北,40.95,117.93,2017,Chengde,1.0,Chengde,1.9
+confirmed,yes,Kaifeng,Kaifeng,开封,Henan,河南,34.8,114.33,2022,Kaifeng,1.0,Kaifeng,1.9
+confirmed,yes,Yangjiang,Yangjiang,阳江,Guangdong,广东,21.85,111.97,2022,Yangjiang,1.0,Yangjiang,1.9
+confirmed,yes,Pingliang,Pingliang,平凉,Gansu,甘肃,35.55,106.67,2022,Pingliang,1.0,Pingliang,1.9
+confirmed,yes,Zhuzhou,Zhuzhou,株洲,Hunan,湖南,27.83,113.13,2014,Zhuzhou,1.0,Zhuzhou,2.0
+confirmed,yes,Rizhao,Rizhao,日照,Shandong,山东,35.42,119.52,2017,Rizhao,1.0,Rizhao,2.0
+confirmed,yes,Shiyan,Shiyan,十堰,Hubei,湖北,32.63,110.77,2016,Shiyan,1.0,Shiyan,2.1
+confirmed,yes,Changde,Changde,常德,Hunan,湖南,29.05,111.7,2016,Changde,1.0,Changde,2.1
+confirmed,yes,Xinyu,Xinyu,新余,Jiangxi,江西,27.82,114.92,2010,Xinyu,1.0,Xinyu,2.2
+confirmed,yes,Changchun,Changchun,长春,Jilin,吉林,43.88,125.35,2016,Changchun,1.0,Changchun,2.2
+confirmed,yes,Ganzhou,Ganzhou,赣州,Jiangxi,江西,25.83,114.93,2017,Ganzhou,1.0,Ganzhou,2.2
+confirmed,yes,Huangshan,Huangshan,黄山,Anhui,安徽,29.72,118.3,2015,Huangshan,1.0,Huangshan,2.3
+confirmed,yes,Nantong,Nantong,南通,Jiangsu,江苏,31.97,120.87,2018,Nantong,1.0,Nantong,2.3
+confirmed,yes,Baotou,Baotou,包头,Inner Mongolia,内蒙古,40.65,109.85,2007,Baotou,1.0,Baotou,2.4
+confirmed,yes,Hefei,Hefei,合肥,Anhui,安徽,31.85,117.27,2014,Hefei,1.0,Hefei,2.4
+confirmed,yes,Xinyang,Xinyang,信阳,Henan,河南,32.15,114.07,2019,Xinyang,1.0,Xinyang,2.4
+confirmed,yes,Shangrao,Shangrao,上饶,Jiangxi,江西,28.45,117.93,2017,Shangrao,1.0,Shangrao,2.5
+confirmed,yes,Xinxiang,Xinxiang,新乡,Henan,河南,35.3,113.93,2008,Xinxiang,1.0,Xinxiang,2.6
+confirmed,yes,Wenzhou,Wenzhou,温州,Zhejiang,浙江,28.02,120.68,2014,Wenzhou,1.0,Wenzhou,2.6
+confirmed,yes,Anqing,Anqing,安庆,Anhui,安徽,30.52,117.05,2014,Anqing,1.0,Anqing,2.6
+confirmed,yes,Chenzhou,Chenzhou,郴州,Hunan,湖南,25.78,113.02,2014,Chenzhou,1.0,Chenzhou,2.6
+confirmed,yes,Langfang,Langfang,廊坊,Hebei,河北,39.53,116.68,2019,Langfang,1.0,Langfang,2.6
+confirmed,yes,Dongguan,Dongguan,东莞,Guangdong,广东,23.02,113.75,2015,Dongguan,1.0,Dongguan,2.7
+confirmed,yes,Jiujiang,Jiujiang,九江,Jiangxi,江西,29.72,115.98,2016,Jiujiang,1.0,Jiujiang,2.7
+confirmed,yes,Baoding,Baoding,保定,Hebei,河北,38.87,115.47,2019,Baoding,1.0,Baoding,2.7
+confirmed,yes,Hangzhou,Hangzhou,杭州,Zhejiang,浙江,30.27,120.17,2009,Hangzhou,1.0,Hangzhou,2.8
+confirmed,yes,Baoji,Baoji,宝鸡,Shaanxi,陕西,34.37,107.23,2009,Baoji,1.0,Baoji,2.8
+confirmed,yes,Shangqiu,Shangqiu,商丘,Henan,河南,34.45,115.65,2016,Shangqiu,1.0,Shangqiu,2.8
+confirmed,yes,Shaoguan,Shaoguan,韶关,Guangdong,广东,24.82,113.6,2022,Shaoguan,1.0,Shaoguan,2.8
+confirmed,yes,Chifeng,Chifeng,赤峰,Inner Mongolia,内蒙古,42.27,118.95,2013,Chifeng,1.0,Chifeng,2.9
+confirmed,yes,Shijiazhuang,Shijiazhuang,石家庄,Hebei,河北,38.05,114.48,2015,Shijiazhuang,1.0,Shijiazhuang,2.9
+confirmed,yes,Longyan,Longyan,龙岩,Fujian,福建,25.08,117.02,2015,Longyan,1.0,Longyan,3.0
+confirmed,yes,Wuhan,Wuhan,武汉,Hubei,湖北,30.58,114.3,2010,Wuhan,1.0,Wuhan,3.2
+confirmed,yes,Liuan,Lu'an,六安,Anhui,安徽,31.73,116.52,2016,Liuan,0.889,Liuan,3.4
+confirmed,yes,Benxi,Benxi,本溪,Liaoning,辽宁,41.32,123.77,2010,Benxi,1.0,Benxi,3.5
+confirmed,yes,Bazhong,Bazhong,巴中,Sichuan,四川,31.87,106.77,2017,Bazhong,1.0,Bazhong,3.6
+confirmed,yes,Binzhou,Binzhou,滨州,Shandong,山东,37.38,117.97,2022,Binzhou,1.0,Binzhou,3.6
+confirmed,yes,Huangshi,Huangshi,黄石,Hubei,湖北,30.22,115.05,2018,Huangshi,1.0,Huangshi,3.7
+confirmed,yes,Huludao,Huludao,葫芦岛,Liaoning,辽宁,40.72,120.85,2015,Huludao,1.0,Huludao,3.8
+confirmed,yes,Sanming,Sanming,三明,Fujian,福建,26.23,117.63,2016,Sanming,1.0,Sanming,3.9
+confirmed,yes,Jingdezhen,Jingdezhen,景德镇,Jiangxi,江西,29.27,117.18,2017,Jingdezhen,1.0,Jingdezhen,3.9
+confirmed,yes,Ma'anshan,Ma'anshan,马鞍山,Anhui,安徽,31.67,118.5,2019,Ma'anshan,1.0,Ma'anshan,4.1
+confirmed,yes,Shantou,Shantou,汕头,Guangdong,广东,23.35,116.68,2019,Shantou,1.0,Shantou,4.1
+confirmed,yes,Lianyungang,Lianyungang,连云港,Jiangsu,江苏,34.6,119.22,2022,Lianyungang,1.0,Lianyungang,4.1
+confirmed,yes,Zunyi,Zunyi,遵义,Guizhou,贵州,27.73,106.9,2010,Zunyi,1.0,Zunyi,4.2
+confirmed,yes,Zhangjiakou,Zhangjiakou,张家口,Hebei,河北,40.77,114.87,2014,Zhangjiakou,1.0,Zhangjiakou,4.5
+confirmed,yes,Zhengzhou,Zhengzhou,郑州,Henan,河南,34.75,113.65,2014,Zhengzhou,1.0,Zhengzhou,4.5
+confirmed,yes,Zhumadian,Zhumadian,驻马店,Henan,河南,33.02,114.02,2018,Zhumadian,1.0,Zhumadian,4.6
+confirmed,yes,Xianning,Xianning,咸宁,Hubei,湖北,29.88,114.32,2015,Xianning,1.0,Xianning,5.0
+confirmed,yes,Yibin,Yibin,宜宾,Sichuan,四川,28.77,104.57,2017,Yibin,1.0,Yibin,5.3
+confirmed,yes,Changsha,Changsha,长沙,Hunan,湖南,28.23,112.93,2006,Changsha,1.0,Changsha,6.0
+confirmed,yes,Puyang,Puyang,濮阳,Henan,河南,35.72,115.02,2018,Puyang,1.0,Puyang,6.0
+confirmed,yes,Weifang,Weifang,潍坊,Shandong,山东,36.72,119.17,2016,Weifang,1.0,Weifang,6.2
+confirmed,yes,Luoyang,Luoyang,洛阳,Henan,河南,34.68,112.45,2011,Luoyang,1.0,Luoyang,6.9
+confirmed,yes,Zaozhuang,Zaozhuang,枣庄,Shandong,山东,34.87,117.32,2014,Zaozhuang,1.0,Zaozhuang,7.2
+confirmed,yes,Zhoushan,Zhoushan,舟山,Zhejiang,浙江,30.03,122.1,2018,Zhoushan,1.0,Zhoushan,11.9
+confirmed,yes,Fangchenggang,Fangchenggang,防城港,Guangxi,广西,21.62,108.35,2019,Fangchenggang,1.0,Fangchenggang,16.2
+confirmed,yes,Kunming,Kunming,昆明,Yunnan,云南,25.05,102.72,2013,Kunming,1.0,Kunming,22.4
+confirmed,yes,Shizuishan,Shizuishan,石嘴山,Ningxia,宁夏,39.02,106.38,2013,Shizuishan,1.0,Shizuishan,41.1

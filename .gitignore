@@ -38,4 +38,20 @@ venv_geo/
 venv_stats/
 environment_stats/
 environment_geo/
+environment_data/
 .env
+
+# Raw satellite downloads and station .dly files (hundreds of GB; not included)
+data/download_modis_lst/source/
+data/download_modis_tree_cover/source/
+data/download_modis_ndvi/source/
+data/download_clcd/source/
+data/station_temps/source/dly/
+
+# Intermediate array files (regenerated from HDF; not included)
+data/convert_hdf_to_arrays/generated/
+data/convert_tree_cover_to_arrays/generated/
+data/convert_modis_ndvi_to_arrays/generated/
+
+# Internal version archives -- not needed by replicators
+_old/

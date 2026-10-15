@@ -106,6 +106,12 @@ CITY_OUTCOMES = [
     ('clcd_forest_pct_5km',    'CLCD Forest (%) 5km'),
     ('clcd_forest_pct_10km',   'CLCD Forest (%) 10km'),
     ('clcd_forest_pct_20km',   'CLCD Forest (%) 20km'),
+    # Prefecture boundary outcomes (added 2026-10-06: pf05.shp polygon extraction)
+    ('lst_summer_mean_pref',   'Summer LST (C) pref'),
+    ('lst_summer_max_pref',    'Peak LST (C) pref'),
+    ('tree_cover_mean_pref',   'Tree Cover (%) pref'),
+    ('ndvi_mean_pref',         'NDVI pref'),
+    ('clcd_forest_pct_pref',   'CLCD Forest (%) pref'),
 ]
 
 
@@ -159,7 +165,7 @@ def _outcome_meta(outcome_col, est):
     return y_label, title, x_label
 
 
-def _plot_coeffs(df_es, save_path, outcome_col, est, xlim_lo=None, xlim_hi=None):
+def _plot_coeffs(df_es, save_path, outcome_col, est, xlim_lo=None, xlim_hi=None, ref_time=None):
     """Save one event-study figure in s1mono style.
 
     2026-07-26: switched to whiskers (errorbar) for CIs; removed connecting
@@ -188,6 +194,13 @@ def _plot_coeffs(df_es, save_path, outcome_col, est, xlim_lo=None, xlim_hi=None)
         capsize=3,        # horizontal cap width
         capthick=0.8,
     )
+
+    # Reference period marker: plain dot at (ref_time, 0), no error bars.
+    # 2026-10-09: csdid omits t=-1 from estat event output (it is the base
+    # period).  Pass ref_time=-1 from process_raw_output to draw an explicit
+    # marker here so the reference level is always visible.
+    if ref_time is not None:
+        ax.plot([ref_time], [0], 'o', color='black', markersize=4, zorder=5)
 
     # Dashed grey zero line
     ax.axhline(0, color='0.55', linestyle='--', linewidth=0.8)
@@ -280,7 +293,13 @@ def process_raw_output(tables_stem, figures_stem, label, outcome_col):
             any_missing = True
             continue
 
-        df = pd.read_csv(raw_path)
+        # 2026-10-14: added na_values + skipinitialspace -- Stata writes '.' for
+        # missing values and pads all fields with leading spaces.  skipinitialspace
+        # strips the padding so na_values=['.'] can match the bare dot; without it
+        # pandas sees '                 .' (still a string) and reads the se column
+        # as StringDtype, causing a TypeError when the code compares se > 0.
+        # (Replaces the 2026-10-07 pd.to_numeric workaround with a root-cause fix.)
+        df = pd.read_csv(raw_path, na_values=['.'], skipinitialspace=True)
         df = df.rename(columns={'b': 'att'})   # Stata writes 'b'; call it 'att'
 
         # Separate ATT sentinel row and event-study rows
@@ -306,10 +325,15 @@ def process_raw_output(tables_stem, figures_stem, label, outcome_col):
         df_es = df_es[(df_es['se'] > 0) | ((df_es['att'] != 0) & (df_es['se'] == 0))].copy()
         df_es = df_es.sort_values('rel_time').reset_index(drop=True)
 
-        # For CS estimators, normalize to t=-1 as the reference period.
-        # Stata csdid does not enforce t=-1 = 0 by construction; subtract its
-        # value from all other periods and zero it out for the plot.
-        # 2026-07-27: added to fix non-zero t=-1 in Stata CS/DR figures.
+        # For CS estimators, normalize to t=-1 as the reference period, then
+        # remove t=-1 from the errorbar series.  csdid may either include t=-1
+        # with a small non-zero value (normalise and remove) or omit it entirely
+        # (nothing to remove).  Either way, _plot_coeffs draws a plain dot at
+        # (t=-1, 0) via the ref_time argument -- no error bars, matching the
+        # convention for a reference period marker.
+        # 2026-07-27: normalization added to fix non-zero t=-1.
+        # 2026-10-09: remove t=-1 from series; pass ref_time to _plot_coeffs.
+        ref_time_for_plot = None
         if est in ('cs', 'cs_dr'):
             ref_mask = df_es['rel_time'] == -1
             if ref_mask.any():
@@ -317,7 +341,8 @@ def process_raw_output(tables_stem, figures_stem, label, outcome_col):
                 if ref_val != 0.0:
                     other = ~ref_mask
                     df_es.loc[other, 'att'] -= ref_val
-                    df_es.loc[ref_mask, ['att', 'se']] = 0.0
+                df_es = df_es[~ref_mask].copy()
+            ref_time_for_plot = -1
 
         # Compute CIs
         df_es['ci_lower'] = df_es['att'] - 1.96 * df_es['se']
@@ -362,7 +387,8 @@ def process_raw_output(tables_stem, figures_stem, label, outcome_col):
         df_plot = df_es[(df_es['rel_time'] >= lo) & (df_es['rel_time'] <= hi)].copy()
         dest_fig = Path(str(figures_stem) + f'_{est}.png')
         if not df_plot.empty:
-            _plot_coeffs(df_plot, dest_fig, outcome_col, est, xlim_lo=lo, xlim_hi=hi)
+            _plot_coeffs(df_plot, dest_fig, outcome_col, est, xlim_lo=lo, xlim_hi=hi,
+                         ref_time=ref_time_for_plot)
         else:
             logger.warning(f'    {est}: no coefficients in window ({lo},{hi}) -- figure skipped')
         logger.info(f'    {est:12s}: ATT={att_val:+.4f}  SE={se_val:.4f}')
@@ -376,8 +402,20 @@ def process_raw_output(tables_stem, figures_stem, label, outcome_col):
 
 def load_panel():
     if PANEL_PARQ.exists():
-        panel = pd.read_parquet(PANEL_PARQ)
-        logger.info(f"Loaded panel from parquet: {len(panel):,} rows")
+        # 2026-10-14: wrapped read_parquet in try/except ImportError -- environment_geo
+        # lacks pyarrow, so the call raises ImportError even though a CSV fallback
+        # exists.  Fall back to CSV when the parquet engine is unavailable.
+        try:
+            panel = pd.read_parquet(PANEL_PARQ)
+            logger.info(f"Loaded panel from parquet: {len(panel):,} rows")
+        except ImportError:
+            if PANEL_CSV.exists():
+                logger.info("pyarrow not available; falling back to CSV")
+                panel = pd.read_csv(PANEL_CSV, dtype={'city_id': str})
+                logger.info(f"Loaded panel from CSV: {len(panel):,} rows")
+            else:
+                logger.error(f"FATAL: pyarrow not available and no CSV fallback at {PANEL_CSV}")
+                sys.exit(1)
     elif PANEL_CSV.exists():
         panel = pd.read_csv(PANEL_CSV, dtype={'city_id': str})
         logger.info(f"Loaded panel from CSV: {len(panel):,} rows")
@@ -610,7 +648,15 @@ def main():
             shutil.copy2(STATA_RUN_LOG, Path(str(tables_stem) + '.log'))
 
         # Parse raw CSVs, write coeffs CSVs, plot figures, extract aggregate ATT/SE
-        rows = process_raw_output(tables_stem, figures_stem, label, outcome_col)
+        # 2026-10-07: wrapped in try/except to capture traceback in the log file
+        # (previously unhandled exceptions went to stderr only and were invisible)
+        import traceback
+        try:
+            rows = process_raw_output(tables_stem, figures_stem, label, outcome_col)
+        except Exception:
+            logger.error(f'  FATAL: exception in process_raw_output for {outcome_col}:')
+            logger.error(traceback.format_exc())
+            sys.exit(1)
         if rows is None:
             logger.error(f'  FATAL: some outputs missing for {outcome_col} -- check Stata log')
             sys.exit(1)

@@ -1,0 +1,26 @@
+# NFC Treatment List -- National Forest City (国家森林城市) Designations
+#
+# HOW TO FILL IN THIS FILE:
+#   1. Rename this file to nfc_treatment_list.csv (remove _TEMPLATE from the name).
+#   2. Add one row per designated prefecture-level city.
+#   3. city_name_en: any recognisable English spelling -- used only for human
+#      readability. Matching to UN WUP is done by coordinates, not by name.
+#   4. city_name_zh: Chinese name (汉字) -- canonical identifier.
+#   5. province_en / province_zh: used to disambiguate same-name cities.
+#   6. lat / lon: decimal degrees (WGS84) of the city centroid (prefectural
+#      city seat). Precision to 2 decimal places is sufficient.
+#      Good sources: Wikipedia infobox, Baidu Maps, Google Maps.
+#   7. designation_year: year officially designated by the State Forestry
+#      Administration / NFGA (2004 is the earliest possible year).
+#
+# MATCHING: build_city_universe_v2.py finds the nearest UN WUP city to each
+# row's (lat, lon) using Euclidean distance. It flags any match where the
+# nearest WUP city is > 1 degree (~100 km) away -- those rows appear in
+# matching_report.csv with match_flag=1 and should be checked.
+#
+# SOURCES FOR NFC LIST:
+#   NFGA official gazette, Chen et al. 2019 (Ecological Indicators),
+#   Gong et al. 2020, He et al. 2022.
+#
+city_name_en,city_name_zh,province_en,province_zh,lat,lon,designation_year
+Guiyang,贵阳,Guizhou,贵州,26.65,106.63,2007

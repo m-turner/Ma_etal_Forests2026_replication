@@ -146,8 +146,16 @@ def process_raw_output(tables_stem, figures_stem, label, outcome_col):
             any_missing = True
             continue
 
-        df = pd.read_csv(raw_path)
+        # 2026-10-14: na_values=['.'] treats Stata's missing value marker as NaN.
+        # csdid writes '.' for the reference period SE (Tm1); without this, pandas
+        # reads the se column as object dtype and the se>0 comparison crashes.
+        # 2026-10-14: pandas 3.0+ uses Arrow-backed strings by default; cast att
+        # and se to float explicitly so numeric comparisons work even if pandas
+        # inferred the columns as string[pyarrow].
+        df = pd.read_csv(raw_path, na_values=['.'])
         df = df.rename(columns={'b': 'att'})   # Stata writes 'b'; call it 'att'
+        df['att'] = pd.to_numeric(df['att'], errors='coerce')
+        df['se']  = pd.to_numeric(df['se'],  errors='coerce')
 
         # Separate ATT sentinel row and event-study rows
         agg_df = df[df['period'] == 'ATT']
@@ -164,12 +172,14 @@ def process_raw_output(tables_stem, figures_stem, label, outcome_col):
         df_es = df_es.sort_values('rel_time').reset_index(drop=True)
         df_es = df_es[(df_es['rel_time'] >= -5) & (df_es['rel_time'] <= 10)].copy()
 
-        # For CS estimators, normalize so that t=-1 is the reference period (att=0).
-        # By CS construction, ATT(g, g-1) = 0 for each cohort, so the aggregated
-        # event-study estimate at t=-1 should be exactly zero.  Stata csdid returns
-        # a non-zero value due to numerical aggregation across cohorts; subtract it
-        # from all other estimates to impose the convention.
-        # 2026-08-04: added to match normalization applied in run_analysis_stata_v1.py.
+        # For CS estimators, normalize to t=-1 and remove it from the series.
+        # csdid may include t=-1 with a small non-zero value (normalise, then
+        # remove) or omit it entirely (nothing to remove).  A plain dot is drawn
+        # at (t=-1, 0) separately below -- no error bars, matching the reference
+        # period convention.
+        # 2026-08-04: normalization added to match run_analysis_stata_v1.py.
+        # 2026-10-09: remove t=-1 from series; draw explicit reference marker.
+        ref_time_for_plot = None
         if est in ('cs', 'cs_dr'):
             ref_mask = df_es['rel_time'] == -1
             if ref_mask.any():
@@ -177,7 +187,8 @@ def process_raw_output(tables_stem, figures_stem, label, outcome_col):
                 if ref_val != 0.0:
                     other = ~ref_mask
                     df_es.loc[other, 'att'] -= ref_val
-                    df_es.loc[ref_mask, ['att', 'se']] = 0.0
+                df_es = df_es[~ref_mask].copy()
+            ref_time_for_plot = -1
 
         # Compute CIs from the (normalized) estimates.
         df_es['ci_lower'] = df_es['att'] - 1.96 * df_es['se']
@@ -223,6 +234,10 @@ def process_raw_output(tables_stem, figures_stem, label, outcome_col):
                           df_es['ci_upper'] - df_es['att']],
                     fmt='o', color='black', markersize=4,
                     elinewidth=0.8, capsize=3, capthick=0.8)
+        # Reference period marker: plain dot at (ref_time, 0), no error bars.
+        # 2026-10-09: csdid omits t=-1 from estat event; draw explicit marker.
+        if ref_time_for_plot is not None:
+            ax.plot([ref_time_for_plot], [0], 'o', color='black', markersize=4, zorder=5)
         ax.axhline(0, color='0.55', linestyle='--', linewidth=0.8)
         # Light gray vertical line at t=0 (treatment date) -- 2026-07-31
         ax.axvline(0, color='lightgray', linewidth=0.8, zorder=0)
@@ -511,7 +526,13 @@ def main():
             shutil.copy2(STATA_RUN_LOG, Path(str(tables_stem) + '.log'))
 
         # Parse raw CSVs, write coeffs CSVs, plot figures, extract aggregate ATT/SE
-        rows = process_raw_output(tables_stem, figures_stem, label, outcome_col)
+        try:
+            rows = process_raw_output(tables_stem, figures_stem, label, outcome_col)
+        except Exception as exc:
+            import traceback
+            logger.error(f'  FATAL: exception in process_raw_output for {outcome_col}:')
+            logger.error(traceback.format_exc())
+            sys.exit(1)
         if rows is None:
             logger.error(f'  FATAL: some outputs missing for {outcome_col} -- check Stata log')
             sys.exit(1)

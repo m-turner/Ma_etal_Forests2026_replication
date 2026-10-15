@@ -1,0 +1,15 @@
+name: environment_data
+channels:
+  - conda-forge
+dependencies:
+  # Core Python
+  - python=3.11
+
+  # HDF4 reading (requires conda; conflicts with environment_geo pip packages)
+  - pyhdf>=0.10
+
+  # Array processing
+  - numpy>=1.24
+
+  # Utilities
+  - tqdm>=4.65

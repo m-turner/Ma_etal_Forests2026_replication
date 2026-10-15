@@ -1,0 +1,20 @@
+# Manual overrides for NFC -> WUP city matching.
+#
+# Use this file to resolve cities with status=conflict or status=unmatched
+# in matching_report.csv, and any confirmed/name_only/distance_only matches
+# you want to correct after inspecting the report.
+#
+# Format: two columns, no header line.
+#   nfc_name_en,wup_city_name
+#
+# nfc_name_en  : the city_name_en value from nfc_treatment_list.csv (exact match,
+#                case-sensitive)
+# wup_city_name: the city_name_wup value from the WUP file (copy from the
+#                matching_report.csv dist_wup or name_wup column)
+#
+# After adding entries here, re-run Step 0b (build_city_universe_v3.py).
+# The overridden city will appear in the report with status=manual_override.
+#
+# Example (remove leading # to activate):
+# Suzhou,Suzhou
+# Tai'an,Tai'an

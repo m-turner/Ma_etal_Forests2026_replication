@@ -7,6 +7,14 @@ Standard errors are now from diff_diff.ImputationDiD (BJS) and
 csdid.ATTgt (CS DR / CS) -- no post-hoc independence approximation.
 Previous version (with ad-hoc SE) saved in _old/ as compute_table1_v1.py.
 
+Updated 2026-10-14: reads BJS-DR estimates from aggregate_atts.csv (Python
+pipeline) and CS / CS-DR estimates from stata_aggregate_atts.csv (Stata).
+Stata cannot produce standard errors for the BJS nose (imputed pre-period)
+option, so Python is the only source for BJS with controls.  CS and CS-DR
+use Stata (csdid) as the preferred implementation.  The "BJS 20km" (BJS
+without controls) column was dropped from the paper and is removed here.
+Previous version saved in _old/ as compute_table1_v1.py.
+
 Outputs
 -------
 Prints a LaTeX-ready table body to stdout and writes paper/table1_values.csv.
@@ -28,17 +36,23 @@ from scipy import stats as scipy_stats
 ROOT   = Path(__file__).parent.parent
 TABLES = ROOT / "analysis" / "tables"
 
+# Source files for each estimator group
+PYTHON_AGG_FILE = TABLES / "aggregate_atts.csv"        # BJS with controls (nose SE)
+STATA_AGG_FILE  = TABLES / "stata_aggregate_atts.csv"  # CS and CS DR (csdid variance)
+
 # ---------------------------------------------------------------------------
 # Table 1 structure
 # ---------------------------------------------------------------------------
 # Each column maps a display label to (estimator key, buffer suffix).
-# The aggregate_atts.csv has rows keyed by (outcome_col, estimator).
-# outcome_col = base_name + '_' + buffer  (e.g. 'lst_summer_mean_20km')
-# estimator   = one of: bjs_dr, bjs, cs_dr, cs
+# Estimators sourced from Python vs Stata:
+#   PYTHON: bjs_dr -- Stata cannot produce SE for the nose (imputed pre-period) option
+#   STATA:  cs_dr, cs -- preferred Stata csdid implementation
+PYTHON_ESTIMATORS = {"bjs_dr"}
+STATA_ESTIMATORS  = {"cs_dr", "cs"}
+
 COLUMNS = [
     ("BJS-DR 20km", "bjs_dr", "20km"),
     ("BJS-DR 5km",  "bjs_dr", "5km"),
-    ("BJS 20km",    "bjs",    "20km"),
     ("CS DR 20km",  "cs_dr",  "20km"),
     ("CS 20km",     "cs",     "20km"),
 ]
@@ -67,22 +81,54 @@ def add_stars(att, se):
 
 
 def main():
-    agg_file = TABLES / "aggregate_atts.csv"
-    if not agg_file.exists():
-        print(f"ERROR: {agg_file} not found.")
-        print("Run: python code/run_analysis/run_analysis_v4.py")
+    # Load Python aggregate ATTs (BJS with controls / nose SE).
+    # aggregate_atts.csv uses 'outcome_col' as the key; rename to 'outcome_buffer'
+    # to match the Stata file schema and allow a single lookup path below.
+    if not PYTHON_AGG_FILE.exists():
+        print(f"ERROR: {PYTHON_AGG_FILE} not found.")
+        print("Run: python code/run_analysis/run_analysis_v6.py")
         sys.exit(1)
+    python_agg = pd.read_csv(PYTHON_AGG_FILE).rename(
+        columns={"outcome_col": "outcome_buffer"}
+    )
 
-    agg = pd.read_csv(agg_file)
+    # Load Stata aggregate ATTs (CS and CS-DR via csdid).
+    # Missing = Stata not yet run; those cells will show NaN / [TBD].
+    stata_agg = None
+    if STATA_AGG_FILE.exists():
+        stata_agg = pd.read_csv(STATA_AGG_FILE)
+    else:
+        print(f"WARNING: {STATA_AGG_FILE} not found.")
+        print("Run: python code/run_analysis_stata/run_analysis_stata_v1.py")
+        print("CS DR and CS cells will show [TBD] in the table.")
 
     # Build table rows: one entry per (outcome_base, column)
     table_rows = []
     for outcome_base, outcome_label in OUTCOMES:
         for col_label, estimator_key, buffer in COLUMNS:
             outcome_col = f"{outcome_base}_{buffer}"
-            match = agg[
-                (agg["outcome_col"] == outcome_col) &
-                (agg["estimator"]   == estimator_key)
+
+            # Choose the right source for this estimator
+            if estimator_key in PYTHON_ESTIMATORS:
+                source = python_agg
+            elif stata_agg is not None:
+                source = stata_agg
+            else:
+                att, se = np.nan, np.nan
+                table_rows.append({
+                    "outcome":       outcome_base,
+                    "outcome_label": outcome_label,
+                    "column":        col_label,
+                    "estimator":     estimator_key,
+                    "buffer":        buffer,
+                    "att":           att,
+                    "se":            se,
+                })
+                continue
+
+            match = source[
+                (source["outcome_buffer"] == outcome_col) &
+                (source["estimator"]      == estimator_key)
             ]
             if match.empty:
                 att, se = np.nan, np.nan
@@ -148,7 +194,7 @@ def main():
     # Warn about any missing cells
     missing = results[results["att"].isna()]
     if not missing.empty:
-        print("\nWARNING -- missing estimates (run run_analysis_v4.py first):")
+        print("\nWARNING -- missing estimates:")
         for _, r in missing.iterrows():
             print(f"  {r['column']} x {r['outcome']} ({r['estimator']} {r['buffer']})")
 

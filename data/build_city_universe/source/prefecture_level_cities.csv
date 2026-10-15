@@ -1,0 +1,290 @@
+# Prefecture-level city filter for the WUP control pool.
+# Used by build_city_universe_v4.py to restrict both treated and control cities
+# to Chinese prefecture-level administrative units (地级市) and above.
+#
+# Source: Manual classification against the Ministry of Civil Affairs of China
+#         administrative divisions (as of 2020). Direct municipalities (Beijing,
+#         Shanghai, Tianjin, Chongqing) are included. County-level cities that
+#         serve as seats of autonomous prefectures are EXCLUDED (the prefecture
+#         is the prefecture-level unit, not the city within it).
+#
+# Names must match WUP2018 File 22 spelling exactly (city_name_wup column).
+# Fields containing commas are quoted per standard CSV format.
+#
+# Compiled: 2026-06-28
+city_name_wup
+Akesu
+Ankang
+Anqing
+Anshan
+Anshun
+Anyang
+Baicheng
+Baoding
+Baoji
+Baishan
+Baiyin
+Baotou
+Bayannaoer
+Bazhong
+Beihai
+Beijing
+Bengbu
+Benxi
+Bijie
+Binzhou
+Bozhou
+Cangzhou
+Changchun
+Changde
+Changsha
+Changzhi
+"Changzhou, Jiangsu"
+Chaoyang
+Chaozhou
+Chengde
+Chengdu
+Chenzhou
+Chifeng
+Chizhou
+Chongqing
+Chuzhou
+Dalian
+Dandong
+Daqing
+Datong
+Dazhou
+Deyang
+Dezhou
+Dongguan
+Dongying
+Enshi
+"Erduosi (Ordoss)"
+Ezhou
+Fangchenggang
+Foshan
+"Fushun, Liaoning"
+Fuyang
+Fuxin
+"Fuzhou, Fujian"
+"Fuzhou, Jiangxi"
+Ganzhou
+"Guang'an"
+Guangyuan
+"Guangzhou, Guangdong"
+Guigang
+Guilin
+Guiyang
+Haerbin
+Haikou
+Hami
+Handan
+Hangzhou
+Hanzhong
+Hebi
+Hechi
+Hefei
+Hegang
+Hengshui
+Hengyang
+Heyuan
+Heze
+Hezhou
+Hohhot
+"Huai'an"
+Huaibei
+Huaihua
+Huainan
+Huangshan
+Huangshi
+Huizhou
+Huludao
+Huzhou
+Jiamusi
+"Ji'an, Jiangxi"
+Jiangmen
+Jiaxing
+Jiayuguan
+Jiaozuo
+Jieyang
+Jilin
+Jincheng
+Jingdezhen
+Jingmen
+"Jingzhou, Hubei"
+"Jining, Shandong"
+Jinhua
+"Ji'nan, Shandong"
+Jinzhong
+Jinzhou
+Jiujiang
+Jiuquan
+"Jixi, Heilongjiang"
+Kaifeng
+Kelamayi
+Kunming
+Laibin
+Laiwu
+Langfang
+Lanzhou
+Leshan
+Lianyungang
+Liaocheng
+Liaoyang
+Liaoyuan
+Linfen
+Linhai
+"Linyi, Shandong"
+"Lishui, Zhejiang"
+Liuan
+Liupanshui
+Liuzhou
+Liyang
+Longyan
+Loudi
+Luohe
+Luoyang
+Luzhou
+Lvliang
+"Ma'anshan"
+Maoming
+Meishan
+Meizhou
+"Mianyang, Sichuan"
+Mudanjiang
+Nanchang
+Nanchong
+"Nanjing, Jiangsu"
+Nanping
+Nantong
+"Nanyang, Henan"
+Neijiang
+Ningbo
+Ningde
+Panjin
+Panzhihua
+"Pingdingshan, Henan"
+Pingliang
+"Pingxiang, Jiangxi"
+Putian
+Puyang
+Qianjiang
+Qingdao
+Qinhuangdao
+Qingyuan
+Qinzhou
+Qiqihaer
+Qitaihe
+Quanzhou
+Qujing
+Quzhou
+Rizhao
+Sanmenxia
+Sanming
+Sanya
+Shangqiu
+Shanghai
+Shangrao
+Shangyu
+Shantou
+Shanwei
+Shaoguan
+Shaoyang
+Shaoxing
+Shenyang
+Shenzhen
+Shihezi
+Shijiazhuang
+Shiyan
+Shizuishan
+Shuangyashan
+Shuozhou
+Siping
+Songyuan
+Suihua
+"Suining, Sichuan"
+Suizhou
+Suqian
+"Suzhou, Anhui"
+"Suzhou, Jiangsu"
+"Taian, Shandong"
+"Taiyuan, Shanxi"
+"Taizhou, Jiangsu"
+"Taizhou, Zhejiang"
+"Tangshan, Hebei"
+Tianjin
+Tianshui
+Tieling
+Tongcheng
+Tongchuan
+Tonghua
+Tongliao
+Tongling
+"Ürümqi (Wulumqi)"
+Weifang
+Weihai
+Weinan
+Wenzhou
+Wuhai
+"Wuhu, Anhui"
+Wuwei
+"Wuxi, Jiangsu"
+Wuhan
+Wuzhou
+"Xi'an, Shaanxi"
+Xiamen
+"Xiangtan, Hunan"
+Xiangyang
+Xianning
+"Xianyang, Shaanxi"
+Xiaogan
+Xingtai
+Xining
+Xinxiang
+Xinyang
+Xinyu
+Xinzhou
+Xiongan
+Xuancheng
+Xuchang
+Xuzhou
+Yaan
+"Yan'an"
+"Yancheng, Jiangsu"
+Yangjiang
+Yangquan
+Yangzhou
+Yantai
+Yibin
+Yichang
+"Yichun, Heilongjiang"
+"Yichun, Jiangxi"
+Yinchuan
+Yingkou
+"Yiyang, Hunan"
+Yongzhou
+Yueyang
+"Yulin, Guangxi"
+"Yulin, Shaanxi"
+Yuncheng
+Yunfu
+Yuxi
+Zaozhuang
+Zhangjiakou
+Zhangye
+Zhanjiang
+Zhangzhou
+Zhaoqing
+Zhaotong
+Zhengzhou
+"Zhenjiang, Jiangsu"
+Zhongshan
+Zhoukou
+Zhoushan
+Zhuhai
+Zhumadian
+Zhuzhou
+Zibo
+Zigong
+Ziyang
+Zunyi

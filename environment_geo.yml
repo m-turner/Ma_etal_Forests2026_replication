@@ -24,6 +24,7 @@ dependencies:
   - pandas
   - numpy
   - xarray
+  - pyarrow>=10.0  # parquet support (required by run_analysis_stata_v1.py)
 
   # Satellite data access
   - earthaccess

@@ -1,0 +1,206 @@
+# NFC Treatment List -- National Forest City (国家森林城市) Designations
+#
+# PRIMARY SOURCE: Baidu Baike (国家森林城市 entry), cross-checked against:
+#   - Chinese Wikipedia (国家森林城市)
+#   - gov.cn official announcement 2022-11-04
+#   - CNR news 2016-09-20 (Jiaozuo + Shangqiu batch)
+# Compiled 2026-06-26. Designation years are OFFICIAL DESIGNATION years
+# (命名年份), NOT construction-start years.
+#
+# Coordinates (lat/lon) are approximate city-centre locations, added
+# 2026-06-26 to enable dual-signal matching in build_city_universe_v3.py.
+#
+# COVERAGE: 174 prefecture-level cities designated 2004-2022.
+# 12 cities dropped 2026-06-26 because they could not be matched to a
+# WUP-2018 File 22 entry (below 300k threshold or no WUP entry):
+#   Hulunbuir (2012), Fushun (2013), Yulin/Guangxi (2013),
+#   Ordos (2015), Pu'er (2015), Yingtan (2016), Chongzuo (2016),
+#   Zhangjiajie (2017), Baise (2017), Xiangxi (2018),
+#   Xishuangbanna (2019), Yulin/Shaanxi (2019).
+#
+# CONFIRMED DISCREPANCIES WITH POC cities_sample.csv (verified via Baidu
+# Baike and gov.cn):
+#   Chengdu:  OFFICIAL designation 2007, POC had 2016
+#   Xi'an:    OFFICIAL designation 2016, POC had 2018
+#   Nanjing:  OFFICIAL designation 2013, POC had 2012
+#   Guiyang:  OFFICIAL designation 2004, POC had 2007
+#
+# CRITICAL FOR CONTROLS: All five POC "control" cities are NFC-treated:
+#   Changsha (2006), Kunming (2013), Hefei (2014), Shijiazhuang (2015),
+#   Foshan (2017). Valid controls come from WUP cities NOT in this list.
+#
+city_name_en,city_name_zh,province_en,province_zh,lat,lon,designation_year
+Guiyang,贵阳,Guizhou,贵州,26.65,106.63,2004
+Shenyang,沈阳,Liaoning,辽宁,41.80,123.43,2005
+Changsha,长沙,Hunan,湖南,28.23,112.93,2006
+Baotou,包头,Inner Mongolia,内蒙古,40.65,109.85,2007
+Chengdu,成都,Sichuan,四川,30.67,104.07,2007
+Xuchang,许昌,Henan,河南,34.03,113.82,2007
+Guangzhou,广州,Guangdong,广东,23.13,113.27,2008
+Xinxiang,新乡,Henan,河南,35.30,113.93,2008
+Aksu,阿克苏,Xinjiang,新疆,41.17,80.25,2008
+Hangzhou,杭州,Zhejiang,浙江,30.27,120.17,2009
+Weihai,威海,Shandong,山东,37.51,122.12,2009
+Baoji,宝鸡,Shaanxi,陕西,34.37,107.23,2009
+Wuxi,无锡,Jiangsu,江苏,31.57,120.30,2009
+Hohhot,呼和浩特,Inner Mongolia,内蒙古,40.82,111.65,2010
+Benxi,本溪,Liaoning,辽宁,41.32,123.77,2010
+Ningbo,宁波,Zhejiang,浙江,29.87,121.55,2010
+Wuhan,武汉,Hubei,湖北,30.58,114.30,2010
+Xinyu,新余,Jiangxi,江西,27.82,114.92,2010
+Luohe,漯河,Henan,河南,33.58,114.02,2010
+Zunyi,遵义,Guizhou,贵州,27.73,106.90,2010
+Dalian,大连,Liaoning,辽宁,38.90,121.60,2011
+Yangzhou,扬州,Jiangsu,江苏,32.40,119.43,2011
+Luoyang,洛阳,Henan,河南,34.68,112.45,2011
+Wuzhou,梧州,Guangxi,广西,23.48,111.28,2011
+Luzhou,泸州,Sichuan,四川,28.87,105.43,2011
+Nanning,南宁,Guangxi,广西,22.82,108.37,2011
+Anshan,鞍山,Liaoning,辽宁,41.12,122.98,2012
+Xuzhou,徐州,Jiangsu,江苏,34.27,117.18,2012
+Quzhou,衢州,Zhejiang,浙江,28.97,118.87,2012
+Lishui,丽水,Zhejiang,浙江,28.45,119.92,2012
+Sanmenxia,三门峡,Henan,河南,34.77,111.20,2012
+Yichang,宜昌,Hubei,湖北,30.70,111.28,2012
+Yiyang,益阳,Hunan,湖南,28.60,112.32,2012
+Liuzhou,柳州,Guangxi,广西,24.32,109.42,2012
+Changzhi,长治,Shanxi,山西,36.20,113.12,2013
+Jincheng,晋城,Shanxi,山西,35.50,112.85,2013
+Chifeng,赤峰,Inner Mongolia,内蒙古,42.27,118.95,2013
+Nanjing,南京,Jiangsu,江苏,32.06,118.77,2013
+Huzhou,湖州,Zhejiang,浙江,30.87,120.10,2013
+Chizhou,池州,Anhui,安徽,30.65,117.48,2013
+Xiamen,厦门,Fujian,福建,24.48,118.08,2013
+Linyi,临沂,Shandong,山东,35.07,118.35,2013
+Pingdingshan,平顶山,Henan,河南,33.73,113.30,2013
+Hezhou,贺州,Guangxi,广西,24.42,111.57,2013
+Guang'an,广安,Sichuan,四川,30.47,106.63,2013
+Guangyuan,广元,Sichuan,四川,32.43,105.83,2013
+Kunming,昆明,Yunnan,云南,25.05,102.72,2013
+Shizuishan,石嘴山,Ningxia,宁夏,39.02,106.38,2013
+Zhangjiakou,张家口,Hebei,河北,40.77,114.87,2014
+Zibo,淄博,Shandong,山东,36.80,118.05,2014
+Zaozhuang,枣庄,Shandong,山东,34.87,117.32,2014
+Zhenjiang,镇江,Jiangsu,江苏,32.21,119.43,2014
+Wenzhou,温州,Zhejiang,浙江,28.02,120.68,2014
+Hefei,合肥,Anhui,安徽,31.85,117.27,2014
+Anqing,安庆,Anhui,安徽,30.52,117.05,2014
+Ji'an,吉安,Jiangxi,江西,27.12,114.98,2014
+Fuzhou,抚州,Jiangxi,江西,27.98,116.35,2014
+Zhengzhou,郑州,Henan,河南,34.75,113.65,2014
+Hebi,鹤壁,Henan,河南,35.75,114.30,2014
+Xiangyang,襄阳,Hubei,湖北,32.02,112.13,2014
+Suizhou,随州,Hubei,湖北,31.70,113.37,2014
+Chenzhou,郴州,Hunan,湖南,25.78,113.02,2014
+Zhuzhou,株洲,Hunan,湖南,27.83,113.13,2014
+Huizhou,惠州,Guangdong,广东,23.08,114.40,2014
+Deyang,德阳,Sichuan,四川,31.12,104.37,2014
+Shijiazhuang,石家庄,Hebei,河北,38.05,114.48,2015
+Yingkou,营口,Liaoning,辽宁,40.65,122.23,2015
+Huludao,葫芦岛,Liaoning,辽宁,40.72,120.85,2015
+Shaoxing,绍兴,Zhejiang,浙江,30.00,120.58,2015
+Huangshan,黄山,Anhui,安徽,29.72,118.30,2015
+Xuancheng,宣城,Anhui,安徽,30.95,118.75,2015
+Zhangzhou,漳州,Fujian,福建,24.52,117.65,2015
+Longyan,龙岩,Fujian,福建,25.08,117.02,2015
+Nanchang,南昌,Jiangxi,江西,28.68,115.88,2015
+Yichun,宜春,Jiangxi,江西,27.82,114.40,2015
+Jinan,济南,Shandong,山东,36.67,116.98,2015
+Qingdao,青岛,Shandong,山东,36.07,120.38,2015
+Tai'an,泰安,Shandong,山东,36.18,117.12,2015
+Xianning,咸宁,Hubei,湖北,29.88,114.32,2015
+Jingmen,荆门,Hubei,湖北,31.03,112.20,2015
+Yongzhou,永州,Hunan,湖南,26.43,111.62,2015
+Dongguan,东莞,Guangdong,广东,23.02,113.75,2015
+Xining,西宁,Qinghai,青海,36.62,101.77,2015
+Changchun,长春,Jilin,吉林,43.88,125.35,2016
+Shuangyashan,双鸭山,Heilongjiang,黑龙江,46.65,131.15,2016
+Changzhou,常州,Jiangsu,江苏,31.78,119.97,2016
+Jinhua,金华,Zhejiang,浙江,29.08,119.65,2016
+Taizhou,台州,Zhejiang,浙江,28.65,121.42,2016
+Lu'an,六安,Anhui,安徽,31.73,116.52,2016
+Sanming,三明,Fujian,福建,26.23,117.63,2016
+Jiujiang,九江,Jiangxi,江西,29.72,115.98,2016
+Yantai,烟台,Shandong,山东,37.47,121.45,2016
+Weifang,潍坊,Shandong,山东,36.72,119.17,2016
+Jiaozuo,焦作,Henan,河南,35.23,113.23,2016
+Shangqiu,商丘,Henan,河南,34.45,115.65,2016
+Shiyan,十堰,Hubei,湖北,32.63,110.77,2016
+Changde,常德,Hunan,湖南,29.05,111.70,2016
+Zhuhai,珠海,Guangdong,广东,22.27,113.57,2016
+Zhaoqing,肇庆,Guangdong,广东,23.05,112.47,2016
+Laibin,来宾,Guangxi,广西,23.75,109.22,2016
+Mianyang,绵阳,Sichuan,四川,31.47,104.73,2016
+Xi'an,西安,Shaanxi,陕西,34.27,108.93,2016
+Yan'an,延安,Shaanxi,陕西,36.60,109.48,2016
+Chengde,承德,Hebei,河北,40.95,117.93,2017
+Tonghua,通化,Jilin,吉林,41.72,125.93,2017
+Tongling,铜陵,Anhui,安徽,30.95,117.82,2017
+Fuzhou,福州,Fujian,福建,26.07,119.30,2017
+Quanzhou,泉州,Fujian,福建,24.90,118.60,2017
+Shangrao,上饶,Jiangxi,江西,28.45,117.93,2017
+Ganzhou,赣州,Jiangxi,江西,25.83,114.93,2017
+Jingdezhen,景德镇,Jiangxi,江西,29.27,117.18,2017
+Rizhao,日照,Shandong,山东,35.42,119.52,2017
+Laiwu,莱芜,Shandong,山东,36.21,117.68,2017
+Foshan,佛山,Guangdong,广东,23.02,113.12,2017
+Jiangmen,江门,Guangdong,广东,22.58,113.08,2017
+Panzhihua,攀枝花,Sichuan,四川,26.58,101.72,2017
+Yibin,宜宾,Sichuan,四川,28.77,104.57,2017
+Bazhong,巴中,Sichuan,四川,31.87,106.77,2017
+Lincang,临沧,Yunnan,云南,23.88,100.08,2017
+Ankang,安康,Shaanxi,陕西,32.68,109.03,2017
+Qinhuangdao,秦皇岛,Hebei,河北,39.93,119.60,2018
+Nantong,南通,Jiangsu,江苏,31.97,120.87,2018
+Zhoushan,舟山,Zhejiang,浙江,30.03,122.10,2018
+Wuhu,芜湖,Anhui,安徽,31.33,118.38,2018
+Putian,莆田,Fujian,福建,25.43,119.02,2018
+Pingxiang,萍乡,Jiangxi,江西,27.62,113.85,2018
+Jining,济宁,Shandong,山东,35.40,116.58,2018
+Liaocheng,聊城,Shandong,山东,36.45,115.98,2018
+Puyang,濮阳,Henan,河南,35.72,115.02,2018
+Zhumadian,驻马店,Henan,河南,33.02,114.02,2018
+Nanyang,南阳,Henan,河南,33.00,112.53,2018
+Huangshi,黄石,Hubei,湖北,30.22,115.05,2018
+Xiangtan,湘潭,Hunan,湖南,27.83,112.93,2018
+Shenzhen,深圳,Guangdong,广东,22.55,114.07,2018
+Zhongshan,中山,Guangdong,广东,22.52,113.40,2018
+Guigang,贵港,Guangxi,广西,23.10,109.60,2018
+Tangshan,唐山,Hebei,河北,39.63,118.18,2019
+Baoding,保定,Hebei,河北,38.87,115.47,2019
+Langfang,廊坊,Hebei,河北,39.53,116.68,2019
+Yancheng,盐城,Jiangsu,江苏,33.35,120.15,2019
+Ma'anshan,马鞍山,Anhui,安徽,31.67,118.50,2019
+Huaibei,淮北,Anhui,安徽,33.95,116.78,2019
+Suzhou,宿州,Anhui,安徽,33.65,116.97,2019
+Nanping,南平,Fujian,福建,26.65,118.18,2019
+Ningde,宁德,Fujian,福建,26.67,119.52,2019
+Pingtan,平潭,Fujian,福建,25.52,119.78,2019
+Anyang,安阳,Henan,河南,36.10,114.38,2019
+Xinyang,信阳,Henan,河南,32.15,114.07,2019
+Jingzhou,荆州,Hubei,湖北,30.35,112.22,2019
+Enshi,恩施,Hubei,湖北,30.30,109.48,2019
+Shantou,汕头,Guangdong,广东,23.35,116.68,2019
+Meizhou,梅州,Guangdong,广东,24.30,116.13,2019
+Fangchenggang,防城港,Guangxi,广西,21.62,108.35,2019
+Meishan,眉山,Sichuan,四川,30.07,103.85,2019
+Qujing,曲靖,Yunnan,云南,25.50,103.80,2019
+Hanzhong,汉中,Shaanxi,陕西,33.07,107.02,2019
+Shangluo,商洛,Shaanxi,陕西,33.87,109.93,2019
+Xingtai,邢台,Hebei,河北,37.07,114.50,2022
+Handan,邯郸,Hebei,河北,36.60,114.48,2022
+Liaoyang,辽阳,Liaoning,辽宁,41.27,123.18,2022
+Lianyungang,连云港,Jiangsu,江苏,34.60,119.22,2022
+Chuzhou,滁州,Anhui,安徽,32.30,118.32,2022
+Binzhou,滨州,Shandong,山东,37.38,117.97,2022
+Kaifeng,开封,Henan,河南,34.80,114.33,2022
+Shaoguan,韶关,Guangdong,广东,24.82,113.60,2022
+Yangjiang,阳江,Guangdong,广东,21.85,111.97,2022
+Maoming,茂名,Guangdong,广东,21.67,110.93,2022
+Liupanshui,六盘水,Guizhou,贵州,26.60,104.83,2022
+Tongren,铜仁,Guizhou,贵州,27.73,109.18,2022
+Qiannan,黔南,Guizhou,贵州,26.00,107.52,2022
+Xianyang,咸阳,Shaanxi,陕西,34.33,108.72,2022
+Pingliang,平凉,Gansu,甘肃,35.55,106.67,2022
+Linzhi,林芝,Tibet,西藏,29.65,94.37,2022
+Dazhou,达州,Sichuan,四川,31.20,107.50,2022

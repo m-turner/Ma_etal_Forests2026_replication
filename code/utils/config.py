@@ -128,6 +128,12 @@ BUILD_COVARIATES_DATA_DIR = DATA_DIR / 'build_covariates'
 BUILD_COVARIATES_SOURCE_DIR = BUILD_COVARIATES_DATA_DIR / 'source'
 BUILD_COVARIATES_GENERATED_DIR = BUILD_COVARIATES_DATA_DIR / 'generated'
 
+# Task 1b: Prefecture boundaries (run once after receiving pf05.shp)
+# Added 2026-10-06: 2005 prefecture polygon matched to each WUP city_id via
+# point-in-polygon spatial join. Used by all four panel building scripts as
+# an additional extraction geometry alongside the circular buffers.
+PREFECTURE_BOUNDARIES_FILE = CITY_BUFFERS_GENERATED_DIR / 'prefecture_boundaries.geojson'
+
 # Task 2e: Download CLCD (China Land Cover Dataset, Landsat-derived, from Zenodo)
 # Added 2026-06-25: Second, non-MODIS tree-cover measure (forest-class %) to
 # cross-check the MODIS NDVI/tree-cover event studies, which showed an

@@ -223,7 +223,7 @@ def plot_station_event_study(coeffs_df, y_label, title, save_path, estimator_key
     # Explicit fontsizes override rcParams so labels fit in the 5x4in panel.
     ax.set_ylabel(y_label, fontsize=10)
     ax.set_xlabel('years to treatment', fontsize=10)   # 2026-07-27
-    ax.set_title(title, fontsize=11)
+    ax.set_title(title, fontsize=11, fontweight='normal')
     ax.tick_params(labelsize=9)
 
     # Tick mark at every year; label only at multiples of 5 (including 0).

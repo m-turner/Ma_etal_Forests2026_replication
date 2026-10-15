@@ -5,6 +5,12 @@
 *   inside a foreach loop and written directly with file write.
 *   BJS aggregate ATT computed with cond() instead of nested if.
 * Previous (Mata-based) version saved in _old/run_one_spec_mata.do
+* 2026-10-15: reverted from failed cond/string/tempname refactor (it hung in foreach ;
+*   loops -- stata_output_cs_raw.csv stayed 0 bytes). Python-side fix is sufficient: ;
+*   skipinitialspace=True + na_values=['.'] in run_analysis_stata_v1.py handles ;
+*   %18.10f leading spaces and Stata missing-value dots without any Stata change. ;
+*   Failed refactor backed up in _old/run_one_spec_pre_20261014.do (confusingly named ;
+*   -- that file is the refactored broken version; THIS is the restore). ;
 * =============================================================================
 * Stata worker for the Python/Stata parallel analysis pipeline.
 * Called once per outcome by run_analysis_stata_v1.py.
